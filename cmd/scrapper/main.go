@@ -6,6 +6,10 @@ import (
 	"os"
 
 	"github.com/charmingruby/serpright/config"
+	"github.com/charmingruby/serpright/internal/scrapper"
+	"github.com/charmingruby/serpright/internal/scrapper/domain/adapter"
+	"github.com/charmingruby/serpright/test/fake"
+	"github.com/charmingruby/serpright/test/inmemory"
 	"github.com/joho/godotenv"
 )
 
@@ -22,4 +26,13 @@ func main() {
 		slog.Error(fmt.Sprintf("CONFIGURATION: %s", err.Error()))
 		os.Exit(1)
 	}
+
+	serp := fake.NewFakeSerp()
+
+	initDependencies(&serp)
+}
+
+func initDependencies(serp adapter.SerpAdapter) {
+	campaingTaskRepo := inmemory.NewInMemoryCampaignTaskRepository()
+	scrapper.NewService(serp, &campaingTaskRepo)
 }
