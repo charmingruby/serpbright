@@ -8,6 +8,6 @@ func NewFakeSerp() FakeSerp {
 
 type FakeSerp struct{}
 
-func (s *FakeSerp) Search(campaigntask entity.CampaignTask) entity.RawSearchData {
-	return entity.RawSearchData{}
+func (s *FakeSerp) Search(campaigntask entity.CampaignTask) (entity.RawSearchData, error) {
+	return entity.RawSearchData{}, nil
 }

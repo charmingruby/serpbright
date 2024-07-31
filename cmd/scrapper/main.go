@@ -8,7 +8,7 @@ import (
 	"github.com/charmingruby/serpright/config"
 	"github.com/charmingruby/serpright/internal/scrapper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/adapter"
-	"github.com/charmingruby/serpright/test/fake"
+	"github.com/charmingruby/serpright/internal/scrapper/serp/service/fake"
 	"github.com/charmingruby/serpright/test/inmemory"
 	"github.com/joho/godotenv"
 )
