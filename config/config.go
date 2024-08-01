@@ -7,11 +7,10 @@ import (
 )
 
 type environment struct {
-	BrightDataHost       string `env:"BRIGHT_DATA_HOST,required"`
-	BrightDataPort       int    `env:"BRIGHT_DATA_PORT,required"`
-	BrightDataCustomerID string `env:"BRIGHT_DATA_CUSTOMER_ID,required"`
-	BrightDataZone       string `env:"BRIGHT_DATA_ZONE,required"`
-	BrightDataPassword   string `env:"BRIGHT_DATA_PASSWORD,required"`
+	BrightDataHost     string `env:"BRIGHT_DATA_HOST,required"`
+	BrightDataPort     int    `env:"BRIGHT_DATA_PORT,required"`
+	BrightDataUsername string `env:"BRIGHT_DATA_USERNAME,required"`
+	BrightDataPassword string `env:"BRIGHT_DATA_PASSWORD,required"`
 }
 
 func NewConfig() (Config, error) {
@@ -25,11 +24,10 @@ func NewConfig() (Config, error) {
 
 	cfg := Config{
 		BrightDataConfig: brightDataConfig{
-			Host:       environment.BrightDataHost,
-			Port:       environment.BrightDataPort,
-			CustomerID: environment.BrightDataCustomerID,
-			Zone:       environment.BrightDataZone,
-			Password:   environment.BrightDataPassword,
+			Host:     environment.BrightDataHost,
+			Port:     environment.BrightDataPort,
+			Username: environment.BrightDataUsername,
+			Password: environment.BrightDataPassword,
 		},
 	}
 
@@ -41,10 +39,8 @@ type Config struct {
 }
 
 type brightDataConfig struct {
-	Host       string
-	Port       int
-	CustomerID string
-	Zone       string
-	Username   string
-	Password   string
+	Host     string
+	Port     int
+	Username string
+	Password string
 }

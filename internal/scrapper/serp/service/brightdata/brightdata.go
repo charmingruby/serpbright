@@ -7,26 +7,19 @@ import (
 )
 
 func NewBrightData(cfg config.Config) *BrightData {
-	formattedUsername := fmt.Sprintf("brd-customer-%s-zone-%s",
-		cfg.BrightDataConfig.CustomerID,
-		cfg.BrightDataConfig.Zone,
-	)
-
 	formattedProxyURL := fmt.Sprintf("http://%s:%s@%s:%d",
-		formattedUsername,
+		cfg.BrightDataConfig.Username,
 		cfg.BrightDataConfig.Password,
 		cfg.BrightDataConfig.Host,
 		cfg.BrightDataConfig.Port,
 	)
 
 	return &BrightData{
-		Host:       cfg.BrightDataConfig.Host,
-		Port:       cfg.BrightDataConfig.Port,
-		CustomerID: cfg.BrightDataConfig.CustomerID,
-		Zone:       cfg.BrightDataConfig.Zone,
-		Username:   formattedUsername,
-		Password:   cfg.BrightDataConfig.Password,
-		ProxyURL:   formattedProxyURL,
+		Host:     cfg.BrightDataConfig.Host,
+		Port:     cfg.BrightDataConfig.Port,
+		Username: cfg.BrightDataConfig.Username,
+		Password: cfg.BrightDataConfig.Password,
+		ProxyURL: formattedProxyURL,
 	}
 }
 
