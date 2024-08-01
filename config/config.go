@@ -7,7 +7,11 @@ import (
 )
 
 type environment struct {
-	BrightDataAPIKey string `env:"BRIGHT_DATA_API_KEY,required"`
+	BrightDataHost       string `env:"BRIGHT_DATA_HOST,required"`
+	BrightDataPort       int    `env:"BRIGHT_DATA_PORT,required"`
+	BrightDataCustomerID string `env:"BRIGHT_DATA_CUSTOMER_ID,required"`
+	BrightDataZone       string `env:"BRIGHT_DATA_ZONE,required"`
+	BrightDataPassword   string `env:"BRIGHT_DATA_PASSWORD,required"`
 }
 
 func NewConfig() (Config, error) {
@@ -21,7 +25,11 @@ func NewConfig() (Config, error) {
 
 	cfg := Config{
 		BrightDataConfig: brightDataConfig{
-			APIKey: environment.BrightDataAPIKey,
+			Host:       environment.BrightDataHost,
+			Port:       environment.BrightDataPort,
+			CustomerID: environment.BrightDataCustomerID,
+			Zone:       environment.BrightDataZone,
+			Password:   environment.BrightDataPassword,
 		},
 	}
 
@@ -33,5 +41,10 @@ type Config struct {
 }
 
 type brightDataConfig struct {
-	APIKey string
+	Host       string
+	Port       int
+	CustomerID string
+	Zone       string
+	Username   string
+	Password   string
 }

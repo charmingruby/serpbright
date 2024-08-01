@@ -7,8 +7,8 @@ import (
 
 	"github.com/charmingruby/serpright/config"
 	"github.com/charmingruby/serpright/internal/scrapper"
-	"github.com/charmingruby/serpright/internal/scrapper/domain/adapter"
-	"github.com/charmingruby/serpright/internal/scrapper/serp/service/fake"
+	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
+	"github.com/charmingruby/serpright/internal/scrapper/serp/service/brightdata"
 	"github.com/charmingruby/serpright/test/inmemory"
 	"github.com/joho/godotenv"
 )
@@ -21,18 +21,24 @@ func main() {
 		slog.Warn("CONFIGURATION: .env file not found")
 	}
 
-	_, err := config.NewConfig()
+	cfg, err := config.NewConfig()
 	if err != nil {
 		slog.Error(fmt.Sprintf("CONFIGURATION: %s", err.Error()))
 		os.Exit(1)
 	}
 
-	serp := fake.NewFakeSerp()
+	serp := brightdata.NewBrightData(cfg)
+	campaingTaskRepo := inmemory.NewInMemoryCampaignTaskRepository()
+	svc := scrapper.NewService(serp, &campaingTaskRepo)
 
-	initDependencies(&serp)
+	runBrightDataActions(svc, serp)
 }
 
-func initDependencies(serp adapter.SerpAdapter) {
-	campaingTaskRepo := inmemory.NewInMemoryCampaignTaskRepository()
-	scrapper.NewService(serp, &campaingTaskRepo)
+func runBrightDataActions(svc usecase.ScrapperUseCase, brightData *brightdata.BrightData) {
+	slog.Info("Running BrightData actions...")
+
+	_, err := brightData.ExecSearch(svc)
+	if err != nil {
+		slog.Error(fmt.Sprintf("%v", err.Error()))
+	}
 }

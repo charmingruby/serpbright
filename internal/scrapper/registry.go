@@ -7,6 +7,7 @@ import (
 )
 
 func NewService(
+
 	serp adapter.SerpAdapter,
 	campaingTaskRepo repository.CampaignTaskRepository,
 ) usecase.ScrapperUseCase {
