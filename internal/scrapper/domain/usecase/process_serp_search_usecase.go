@@ -8,12 +8,7 @@ import (
 )
 
 func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerpSearchInputDTO) (dto.ProcessSerpSearchOutputDTO, error) {
-	campaignTask, err := s.CampaignTaskRepository.FindByID(input.CampaignTaskID)
-	if err != nil {
-		return dto.ProcessSerpSearchOutputDTO{}, err
-	}
-
-	rawData, err := s.Serp.Search(*campaignTask)
+	rawData, err := s.Serp.Search(input.CampaignTask)
 	if err != nil {
 		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Serp search error: " + err.Error())
 	}

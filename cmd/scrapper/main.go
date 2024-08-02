@@ -9,7 +9,6 @@ import (
 	"github.com/charmingruby/serpright/internal/scrapper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
 	"github.com/charmingruby/serpright/internal/scrapper/serp/service/brightdata"
-	"github.com/charmingruby/serpright/test/inmemory"
 	"github.com/joho/godotenv"
 )
 
@@ -28,8 +27,7 @@ func main() {
 	}
 
 	serp := brightdata.NewBrightData(cfg)
-	campaingTaskRepo := inmemory.NewInMemoryCampaignTaskRepository()
-	svc := scrapper.NewService(serp, &campaingTaskRepo)
+	svc := scrapper.NewService(serp)
 
 	runBrightDataActions(svc, serp)
 }

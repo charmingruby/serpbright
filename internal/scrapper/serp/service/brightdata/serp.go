@@ -1,6 +1,7 @@
 package brightdata
 
 import (
+	"crypto/tls"
 	"encoding/json"
 	"fmt"
 	"log/slog"
@@ -22,6 +23,9 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (entity.RawSearchD
 	client := &http.Client{
 		Transport: &http.Transport{
 			Proxy: http.ProxyURL(proxy),
+			TLSClientConfig: &tls.Config{
+				InsecureSkipVerify: true,
+			},
 		},
 	}
 

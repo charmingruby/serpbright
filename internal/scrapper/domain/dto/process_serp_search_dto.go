@@ -3,7 +3,7 @@ package dto
 import "github.com/charmingruby/serpright/internal/scrapper/domain/entity"
 
 type ProcessSerpSearchInputDTO struct {
-	CampaignTaskID string
+	CampaignTask entity.CampaignTask
 }
 
 type ProcessSerpSearchOutputDTO struct {
