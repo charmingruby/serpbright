@@ -6,9 +6,14 @@ import (
 	"os"
 
 	"github.com/charmingruby/serpright/config"
+	rabbitMQPubSub "github.com/charmingruby/serpright/internal/common/queue/rabbitmq"
 	"github.com/charmingruby/serpright/internal/scrapper"
+	"github.com/charmingruby/serpright/internal/scrapper/domain/event"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
+	"github.com/charmingruby/serpright/internal/scrapper/queue"
 	"github.com/charmingruby/serpright/internal/scrapper/serp/service/brightdata"
+	"github.com/charmingruby/serpright/pkg/rabbitmq"
+
 	"github.com/joho/godotenv"
 )
 
@@ -26,8 +31,19 @@ func main() {
 		os.Exit(1)
 	}
 
+	ch, close := rabbitmq.NewRabbitMQConnection(&cfg)
+	defer func() {
+		close()
+		ch.Close()
+	}()
+
+	pubsub := rabbitMQPubSub.NewRabbitMQPubSub(ch)
+
 	serp := brightdata.NewBrightData(cfg)
 	svc := scrapper.NewService(serp)
+
+	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc)
+	go pubsub.Subscribe(event.ProcessCampaignTask, processCampaingTaskEventHandler.Handle)
 
 	runBrightDataActions(svc, serp)
 }

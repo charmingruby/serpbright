@@ -11,6 +11,10 @@ type environment struct {
 	BrightDataPort     int    `env:"BRIGHT_DATA_PORT,required"`
 	BrightDataUsername string `env:"BRIGHT_DATA_USERNAME,required"`
 	BrightDataPassword string `env:"BRIGHT_DATA_PASSWORD,required"`
+	RabbitMQUser       string `env:"RABBITMQ_USER,required"`
+	RabbitMQPassword   string `env:"RABBITMQ_PASSWORD,required"`
+	RabbitMQHost       string `env:"RABBITMQ_HOST,required"`
+	RabbitMQPort       string `env:"RABBITMQ_PORT,required"`
 }
 
 func NewConfig() (Config, error) {
@@ -29,6 +33,12 @@ func NewConfig() (Config, error) {
 			Username: environment.BrightDataUsername,
 			Password: environment.BrightDataPassword,
 		},
+		RabbitMQConfig: rabbitMQConfig{
+			Host:     environment.RabbitMQHost,
+			Port:     environment.RabbitMQPort,
+			Username: environment.RabbitMQUser,
+			Password: environment.RabbitMQPassword,
+		},
 	}
 
 	return cfg, nil
@@ -36,11 +46,19 @@ func NewConfig() (Config, error) {
 
 type Config struct {
 	BrightDataConfig brightDataConfig
+	RabbitMQConfig   rabbitMQConfig
 }
 
 type brightDataConfig struct {
 	Host     string
 	Port     int
+	Username string
+	Password string
+}
+
+type rabbitMQConfig struct {
+	Host     string
+	Port     string
 	Username string
 	Password string
 }
