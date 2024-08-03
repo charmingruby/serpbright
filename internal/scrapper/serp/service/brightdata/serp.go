@@ -9,13 +9,14 @@ import (
 	"net/url"
 
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
+	"github.com/charmingruby/serpright/internal/scrapper/domain/entity/process_entity"
 )
 
-func (s *BrightData) Search(campaigntask entity.CampaignTask) (entity.RawSearchData, error) {
+func (s *BrightData) Search(campaigntask entity.CampaignTask) (process_entity.RawSearchData, error) {
 	proxy, err := url.Parse(s.ProxyURL)
 	if err != nil {
 		slog.Error("Proxy URL parse error: " + err.Error())
-		return entity.RawSearchData{}, err
+		return process_entity.RawSearchData{}, err
 	}
 
 	slog.Info(fmt.Sprintf("Using proxy URL: %s", s.ProxyURL))
@@ -34,7 +35,7 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (entity.RawSearchD
 	resp, err := client.Get(url)
 	if err != nil {
 		slog.Error("Request error: " + err.Error())
-		return entity.RawSearchData{}, err
+		return process_entity.RawSearchData{}, err
 	}
 	defer resp.Body.Close()
 
@@ -42,15 +43,15 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (entity.RawSearchD
 	err = json.NewDecoder(resp.Body).Decode(&result)
 	if err != nil {
 		slog.Error("Decode error: " + err.Error())
-		return entity.RawSearchData{}, err
+		return process_entity.RawSearchData{}, err
 	}
 
 	json, err := json.MarshalIndent(result, "", "  ")
 	if err != nil {
-		return entity.RawSearchData{}, err
+		return process_entity.RawSearchData{}, err
 	}
 
 	fmt.Println(string(json))
 
-	return entity.RawSearchData{}, nil
+	return process_entity.RawSearchData{}, nil
 }

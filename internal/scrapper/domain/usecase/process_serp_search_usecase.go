@@ -4,7 +4,7 @@ import (
 	"errors"
 
 	"github.com/charmingruby/serpright/internal/scrapper/domain/dto"
-	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
+	"github.com/charmingruby/serpright/internal/scrapper/domain/entity/process_entity"
 )
 
 func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerpSearchInputDTO) (dto.ProcessSerpSearchOutputDTO, error) {
@@ -13,7 +13,7 @@ func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerp
 		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Serp search error: " + err.Error())
 	}
 
-	processor := entity.NewSearchProcessor(rawData)
+	processor := process_entity.NewSearchProcessor(rawData)
 
 	result, err := processor.ProcessData()
 	if err != nil {

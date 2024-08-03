@@ -1,4 +1,4 @@
-package entity
+package process_entity
 
 func NewSearchProcessor(rawData RawSearchData) *SearchProcessor {
 	return &SearchProcessor{
