@@ -24,11 +24,15 @@ func (rmq *RabbitMQPubSub) Publish(topic string, message []byte) error {
 		return err
 	}
 
-	rmq.ch.PublishWithContext(context.Background(), "", q.Name, false, false, amqp.Publishing{
+	if err := rmq.ch.PublishWithContext(context.Background(), "", q.Name, false, false, amqp.Publishing{
 		ContentType:  "application/json",
 		Body:         message,
 		DeliveryMode: amqp.Persistent,
-	})
+	}); err != nil {
+		return err
+	}
+
+	log.Printf("Published message to %s -> %v", topic, string(message))
 
 	return nil
 }
@@ -48,6 +52,7 @@ func (rmq *RabbitMQPubSub) Subscribe(topic string, handler func([]byte)) {
 
 	go func() {
 		for d := range msgs {
+			log.Printf("Received message from %s -> %v", topic, string(d.MessageId))
 			handler(d.Body)
 		}
 	}()
