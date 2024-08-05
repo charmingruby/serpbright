@@ -11,7 +11,7 @@ import (
 	"github.com/charmingruby/serpright/internal/scrapper/domain/event"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/queue"
-	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/service/brightdata"
+	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata"
 	"github.com/charmingruby/serpright/pkg/rabbitmq"
 
 	"github.com/joho/godotenv"
