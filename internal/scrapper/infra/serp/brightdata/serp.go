@@ -39,23 +39,21 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (process_entity.Ra
 	}
 	defer resp.Body.Close()
 
-	var result map[string]interface{}
-
-	serpResult := BrightDataResult{}
+	var serpResult any
 	if err := json.NewDecoder(resp.Body).Decode(&serpResult); err != nil {
 		slog.Error("Decode error: " + err.Error())
 		return process_entity.RawSearchData{}, err
 	}
 
 	// log
-	json, err := json.MarshalIndent(result, "", "  ")
+	json, err := json.MarshalIndent(serpResult, "", "  ")
 	if err != nil {
 		return process_entity.RawSearchData{}, err
 	}
 	fmt.Println(string(json))
 	// log
 
-	rawData := BrighdataResultToRawData(serpResult)
+	//rawData := BrighdataResultToRawData(serpResult)
 
-	return rawData, nil
+	return process_entity.RawSearchData{}, nil
 }

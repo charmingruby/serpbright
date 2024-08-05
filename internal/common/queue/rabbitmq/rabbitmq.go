@@ -3,6 +3,7 @@ package rabbitmq
 import (
 	"context"
 	"log"
+	"log/slog"
 
 	"github.com/charmingruby/serpright/internal/scrapper/domain/event"
 	amqp "github.com/rabbitmq/amqp091-go"
@@ -49,6 +50,8 @@ func (rmq *RabbitMQPubSub) Subscribe(topic string, handler func([]byte)) {
 	}
 
 	forever := make(chan struct{})
+
+	slog.Info("RABBITMQ: Pooling on " + topic)
 
 	go func() {
 		for d := range msgs {
