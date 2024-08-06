@@ -158,5 +158,8 @@ type BrightDataResult struct {
 }
 
 func BrighdataResultToRawData(bdResult BrightDataResult) process_entity.RawSearchData {
-	return process_entity.RawSearchData{}
+	return process_entity.RawSearchData{
+		SearchType: bdResult.General.SearchType,
+		RequestID:  bdResult.Input.RequestID,
+	}
 }

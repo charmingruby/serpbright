@@ -63,8 +63,10 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (process_entity.Ra
 		return process_entity.RawSearchData{}, err
 	}
 
-	if err := helper.DebugJSON(serpResult); err != nil {
-		return process_entity.RawSearchData{}, err
+	if debugMode {
+		if err := helper.DebugJSON(serpResult); err != nil {
+			return process_entity.RawSearchData{}, err
+		}
 	}
 
 	rawData := BrighdataResultToRawData(serpResult)

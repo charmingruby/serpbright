@@ -1,3 +1,6 @@
 package process_entity
 
-type ResultantData struct{}
+type ResultantData struct {
+	SearchType string
+	RequestID  string
+}

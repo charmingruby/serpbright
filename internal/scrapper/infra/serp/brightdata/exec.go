@@ -6,7 +6,11 @@ import (
 	"github.com/charmingruby/serpright/test/factory"
 )
 
-func (s *BrightData) ExecSearch(svc usecase.ScrapperUseCase) (dto.ProcessSerpSearchOutputDTO, error) {
+var debugMode bool
+
+func (s *BrightData) ExecSearch(svc usecase.ScrapperUseCase, debug bool) (dto.ProcessSerpSearchOutputDTO, error) {
+	debugMode = debug
+
 	input := dto.ProcessSerpSearchInputDTO{
 		CampaignTask: factory.MakeCampaignTask(),
 	}

@@ -13,5 +13,8 @@ type SearchProcessor struct {
 }
 
 func (sr *SearchProcessor) ProcessData() (ResultantData, error) {
-	return ResultantData{}, nil
+	return ResultantData{
+		SearchType: sr.RawData.SearchType,
+		RequestID:  sr.RawData.RequestID,
+	}, nil
 }

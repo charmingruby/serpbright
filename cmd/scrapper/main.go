@@ -45,14 +45,21 @@ func main() {
 	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc)
 	go pubsub.Subscribe(event.ProcessCampaignTask, processCampaingTaskEventHandler.Handle)
 
-	runBrightDataActions(svc, serp)
+	runBrightDataActions(svc, serp, cfg.DebugMode)
 }
 
-func runBrightDataActions(svc usecase.ScrapperUseCase, brightData *brightdata.BrightData) {
+func runBrightDataActions(
+	svc usecase.ScrapperUseCase,
+	brightData *brightdata.BrightData,
+	debug bool) {
 	slog.Info("Running BrightData actions...")
 
-	_, err := brightData.ExecSearch(svc)
+	op, err := brightData.ExecSearch(svc, debug)
 	if err != nil {
 		slog.Error(fmt.Sprintf("%v", err.Error()))
 	}
+
+	// Example processed data
+	fmt.Printf("RequestID: %s\n", op.SearchResult.RequestID)
+	fmt.Printf("SearchType: %s\n", op.SearchResult.SearchType)
 }

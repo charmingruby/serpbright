@@ -15,6 +15,7 @@ type environment struct {
 	RabbitMQPassword   string `env:"RABBITMQ_PASSWORD,required"`
 	RabbitMQHost       string `env:"RABBITMQ_HOST,required"`
 	RabbitMQPort       string `env:"RABBITMQ_PORT,required"`
+	DebugMode          bool   `env:"DEBUG_MODE,required"`
 }
 
 func NewConfig() (Config, error) {
@@ -27,6 +28,7 @@ func NewConfig() (Config, error) {
 	slog.Info("Environment loaded successfully!")
 
 	cfg := Config{
+		DebugMode: environment.DebugMode,
 		BrightDataConfig: brightDataConfig{
 			Host:     environment.BrightDataHost,
 			Port:     environment.BrightDataPort,
@@ -45,6 +47,7 @@ func NewConfig() (Config, error) {
 }
 
 type Config struct {
+	DebugMode        bool
 	BrightDataConfig brightDataConfig
 	RabbitMQConfig   rabbitMQConfig
 }
