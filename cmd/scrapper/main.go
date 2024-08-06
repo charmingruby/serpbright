@@ -12,6 +12,7 @@ import (
 	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/queue"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata"
+	mongodb "github.com/charmingruby/serpright/pkg/mongo"
 	"github.com/charmingruby/serpright/pkg/rabbitmq"
 
 	"github.com/joho/godotenv"
@@ -31,11 +32,17 @@ func main() {
 		os.Exit(1)
 	}
 
-	ch, close := rabbitmq.NewRabbitMQConnection(&cfg)
+	ch, close := rabbitmq.NewRabbitMQConnection(cfg.RabbitMQConfig.URI)
 	defer func() {
 		close()
 		ch.Close()
 	}()
+
+	_, err = mongodb.NewMongoConnection(cfg.MongoConfig.URI, cfg.MongoConfig.DatabaseName)
+	if err != nil {
+		slog.Error(fmt.Sprintf("MONGO CONNECTION: %s", err.Error()))
+		os.Exit(1)
+	}
 
 	pubsub := rabbitMQPubSub.NewRabbitMQPubSub(ch)
 
@@ -45,7 +52,7 @@ func main() {
 	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc)
 	go pubsub.Subscribe(event.ProcessCampaignTask, processCampaingTaskEventHandler.Handle)
 
-	runBrightDataActions(svc, serp, cfg.DebugMode)
+	//runBrightDataActions(svc, serp, cfg.DebugMode)
 }
 
 func runBrightDataActions(

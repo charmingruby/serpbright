@@ -4,15 +4,12 @@ import (
 	"log"
 	"log/slog"
 
-	"github.com/charmingruby/serpright/config"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/event"
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
-func NewRabbitMQConnection(cfg *config.Config) (*amqp.Channel, func() error) {
-	addr := cfg.RabbitMQConfig.URI
-
-	conn, err := amqp.Dial(addr)
+func NewRabbitMQConnection(uri string) (*amqp.Channel, func() error) {
+	conn, err := amqp.Dial(uri)
 	if err != nil {
 		log.Fatal(err)
 	}

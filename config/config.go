@@ -12,6 +12,8 @@ type environment struct {
 	BrightDataUsername string `env:"BRIGHT_DATA_USERNAME,required"`
 	BrightDataPassword string `env:"BRIGHT_DATA_PASSWORD,required"`
 	RabbitMQURI        string `env:"RABBITMQ_URI,required"`
+	MongoURI           string `env:"MONGO_URI,required"`
+	MongoDatabase      string `env:"MONGO_DATABASE,required"`
 	DebugMode          bool   `env:"DEBUG_MODE,required"`
 }
 
@@ -35,6 +37,10 @@ func NewConfig() (Config, error) {
 		RabbitMQConfig: rabbitMQConfig{
 			URI: environment.RabbitMQURI,
 		},
+		MongoConfig: mongoConfig{
+			URI:          environment.MongoURI,
+			DatabaseName: environment.MongoDatabase,
+		},
 	}
 
 	return cfg, nil
@@ -44,6 +50,7 @@ type Config struct {
 	DebugMode        bool
 	BrightDataConfig brightDataConfig
 	RabbitMQConfig   rabbitMQConfig
+	MongoConfig      mongoConfig
 }
 
 type brightDataConfig struct {
@@ -55,4 +62,9 @@ type brightDataConfig struct {
 
 type rabbitMQConfig struct {
 	URI string
+}
+
+type mongoConfig struct {
+	URI          string
+	DatabaseName string
 }
