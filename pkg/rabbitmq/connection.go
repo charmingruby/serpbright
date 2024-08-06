@@ -1,7 +1,6 @@
 package rabbitmq
 
 import (
-	"fmt"
 	"log"
 	"log/slog"
 
@@ -11,13 +10,7 @@ import (
 )
 
 func NewRabbitMQConnection(cfg *config.Config) (*amqp.Channel, func() error) {
-	addr := fmt.Sprintf(
-		"amqp://%s:%s@%s:%s",
-		cfg.RabbitMQConfig.Username,
-		cfg.RabbitMQConfig.Password,
-		cfg.RabbitMQConfig.Host,
-		cfg.RabbitMQConfig.Port,
-	)
+	addr := cfg.RabbitMQConfig.URI
 
 	conn, err := amqp.Dial(addr)
 	if err != nil {

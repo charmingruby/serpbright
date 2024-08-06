@@ -11,10 +11,7 @@ type environment struct {
 	BrightDataPort     int    `env:"BRIGHT_DATA_PORT,required"`
 	BrightDataUsername string `env:"BRIGHT_DATA_USERNAME,required"`
 	BrightDataPassword string `env:"BRIGHT_DATA_PASSWORD,required"`
-	RabbitMQUser       string `env:"RABBITMQ_USER,required"`
-	RabbitMQPassword   string `env:"RABBITMQ_PASSWORD,required"`
-	RabbitMQHost       string `env:"RABBITMQ_HOST,required"`
-	RabbitMQPort       string `env:"RABBITMQ_PORT,required"`
+	RabbitMQURI        string `env:"RABBITMQ_URI,required"`
 	DebugMode          bool   `env:"DEBUG_MODE,required"`
 }
 
@@ -36,10 +33,7 @@ func NewConfig() (Config, error) {
 			Password: environment.BrightDataPassword,
 		},
 		RabbitMQConfig: rabbitMQConfig{
-			Host:     environment.RabbitMQHost,
-			Port:     environment.RabbitMQPort,
-			Username: environment.RabbitMQUser,
-			Password: environment.RabbitMQPassword,
+			URI: environment.RabbitMQURI,
 		},
 	}
 
@@ -60,8 +54,5 @@ type brightDataConfig struct {
 }
 
 type rabbitMQConfig struct {
-	Host     string
-	Port     string
-	Username string
-	Password string
+	URI string
 }
