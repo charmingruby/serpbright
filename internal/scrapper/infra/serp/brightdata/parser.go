@@ -157,8 +157,8 @@ type BrightDataSearchResult struct {
 	} `json:"videos"`
 }
 
-func BrighDataResultToRawSearchData(bdResult BrightDataSearchResult) process_entity.RawSearchData {
-	return process_entity.RawSearchData{
-		SearchType: bdResult.General.SearchType,
+func BrighDataResultToSearchResult(bdResult BrightDataSearchResult) process_entity.SearchResult {
+	return process_entity.SearchResult{
+		SearchUrl: bdResult.General.SearchType,
 	}
 }

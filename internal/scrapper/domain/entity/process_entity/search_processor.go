@@ -7,16 +7,16 @@ import (
 	"github.com/google/uuid"
 )
 
-func NewSearchProcessor(rawData RawSearchData, task entity.CampaignTask) *SearchProcessor {
+func NewSearchProcessor(searchResult SearchResult, task entity.CampaignTask) *SearchProcessor {
 	return &SearchProcessor{
-		Task:    task,
-		RawData: rawData,
+		Task:         task,
+		SearchResult: searchResult,
 	}
 }
 
 type SearchProcessor struct {
-	Task    entity.CampaignTask
-	RawData RawSearchData
+	Task         entity.CampaignTask
+	SearchResult SearchResult
 }
 
 func (sr *SearchProcessor) ProcessData() (SearchResult, error) {
@@ -24,7 +24,7 @@ func (sr *SearchProcessor) ProcessData() (SearchResult, error) {
 		ID:        uuid.NewString(),
 		Task:      sr.Task,
 		HTMLData:  "<span>test</span>",
-		SearchUrl: sr.RawData.SearchType,
+		SearchUrl: sr.SearchResult.SearchUrl,
 		CreatedAt: time.Now(),
 	}, nil
 }

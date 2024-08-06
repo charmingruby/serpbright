@@ -6,5 +6,5 @@ import (
 )
 
 type SerpAdapter interface {
-	Search(campaigntask entity.CampaignTask) (process_entity.RawSearchData, error)
+	Search(campaigntask entity.CampaignTask) (process_entity.SearchResult, error)
 }
