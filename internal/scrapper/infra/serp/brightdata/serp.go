@@ -4,10 +4,12 @@ import (
 	"crypto/tls"
 	"encoding/json"
 	"fmt"
+	"io"
 	"log/slog"
 	"net/http"
 	"net/url"
 
+	"github.com/charmingruby/serpright/internal/common/helper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity/process_entity"
 )
@@ -30,30 +32,42 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (process_entity.Ra
 		},
 	}
 
-	url := "https://www.google.com/search?q=pizza"
+	req, err := http.NewRequest("GET", "https://www.google.com/search?q=pizza&brd_json=1", nil)
+	if err != nil {
+		slog.Error("Request creation error: " + err.Error())
+		return process_entity.RawSearchData{}, err
+	}
 
-	resp, err := client.Get(url)
+	resp, err := client.Do(req)
 	if err != nil {
 		slog.Error("Request error: " + err.Error())
 		return process_entity.RawSearchData{}, err
 	}
 	defer resp.Body.Close()
 
-	var serpResult any
-	if err := json.NewDecoder(resp.Body).Decode(&serpResult); err != nil {
+	if resp.StatusCode != http.StatusOK {
+		body, _ := io.ReadAll(resp.Body)
+		slog.Error(fmt.Sprintf("Request failed with status: %d. Response body: %s", resp.StatusCode, string(body)))
+		return process_entity.RawSearchData{}, fmt.Errorf("request failed with status: %d", resp.StatusCode)
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		slog.Error("Error reading response body: " + err.Error())
+		return process_entity.RawSearchData{}, err
+	}
+
+	var serpResult BrightDataResult
+	if err := json.Unmarshal(body, &serpResult); err != nil {
 		slog.Error("Decode error: " + err.Error())
 		return process_entity.RawSearchData{}, err
 	}
 
-	// log
-	json, err := json.MarshalIndent(serpResult, "", "  ")
-	if err != nil {
+	if err := helper.DebugJSON(serpResult); err != nil {
 		return process_entity.RawSearchData{}, err
 	}
-	fmt.Println(string(json))
-	// log
 
-	//rawData := BrighdataResultToRawData(serpResult)
+	rawData := BrighdataResultToRawData(serpResult)
 
-	return process_entity.RawSearchData{}, nil
+	return rawData, nil
 }
