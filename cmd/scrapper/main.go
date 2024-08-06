@@ -10,6 +10,7 @@ import (
 	"github.com/charmingruby/serpright/internal/scrapper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/event"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
+	"github.com/charmingruby/serpright/internal/scrapper/infra/database/mongo_repository"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/queue"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata"
 	mongodb "github.com/charmingruby/serpright/pkg/mongo"
@@ -38,16 +39,17 @@ func main() {
 		ch.Close()
 	}()
 
-	_, err = mongodb.NewMongoConnection(cfg.MongoConfig.URI, cfg.MongoConfig.DatabaseName)
+	db, err := mongodb.NewMongoConnection(cfg.MongoConfig.URI, cfg.MongoConfig.DatabaseName)
 	if err != nil {
 		slog.Error(fmt.Sprintf("MONGO CONNECTION: %s", err.Error()))
 		os.Exit(1)
 	}
 
 	pubsub := rabbitMQPubSub.NewRabbitMQPubSub(ch)
+	searchResultRepo := mongo_repository.NewSearchResultMongoRepository(db)
 
 	serp := brightdata.NewBrightData(cfg)
-	svc := scrapper.NewService(serp)
+	svc := scrapper.NewService(serp, &searchResultRepo)
 
 	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc)
 	go pubsub.Subscribe(event.ProcessCampaignTask, processCampaingTaskEventHandler.Handle)
