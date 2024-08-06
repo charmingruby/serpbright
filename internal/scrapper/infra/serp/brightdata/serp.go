@@ -57,7 +57,7 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (process_entity.Ra
 		return process_entity.RawSearchData{}, err
 	}
 
-	var serpResult BrightDataResult
+	var serpResult BrightDataSearchResult
 	if err := json.Unmarshal(body, &serpResult); err != nil {
 		slog.Error("Decode error: " + err.Error())
 		return process_entity.RawSearchData{}, err
@@ -69,7 +69,7 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (process_entity.Ra
 		}
 	}
 
-	rawData := BrighdataResultToRawData(serpResult)
+	rawData := BrighDataResultToRawSearchData(serpResult)
 
 	return rawData, nil
 }

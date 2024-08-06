@@ -1,20 +1,30 @@
 package process_entity
 
-func NewSearchProcessor(rawData RawSearchData) *SearchProcessor {
+import (
+	"time"
+
+	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
+	"github.com/google/uuid"
+)
+
+func NewSearchProcessor(rawData RawSearchData, task entity.CampaignTask) *SearchProcessor {
 	return &SearchProcessor{
-		RawData:       rawData,
-		ResultantData: nil,
+		Task:    task,
+		RawData: rawData,
 	}
 }
 
 type SearchProcessor struct {
-	RawData       RawSearchData
-	ResultantData *ResultantData
+	Task    entity.CampaignTask
+	RawData RawSearchData
 }
 
-func (sr *SearchProcessor) ProcessData() (ResultantData, error) {
-	return ResultantData{
-		SearchType: sr.RawData.SearchType,
-		RequestID:  sr.RawData.RequestID,
+func (sr *SearchProcessor) ProcessData() (SearchResult, error) {
+	return SearchResult{
+		ID:        uuid.NewString(),
+		Task:      sr.Task,
+		HTMLData:  "<span>test</span>",
+		SearchUrl: sr.RawData.SearchType,
+		CreatedAt: time.Now(),
 	}, nil
 }

@@ -13,14 +13,14 @@ func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerp
 		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Serp search error: " + err.Error())
 	}
 
-	processor := process_entity.NewSearchProcessor(rawData)
+	processor := process_entity.NewSearchProcessor(rawData, input.CampaignTask)
 
-	result, err := processor.ProcessData()
+	processedResult, err := processor.ProcessData()
 	if err != nil {
 		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Serp data process error: " + err.Error())
 	}
 
 	return dto.ProcessSerpSearchOutputDTO{
-		SearchResult: result,
+		SearchResult: processedResult,
 	}, nil
 }

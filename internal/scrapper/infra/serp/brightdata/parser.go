@@ -6,7 +6,7 @@ import (
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity/process_entity"
 )
 
-type BrightDataResult struct {
+type BrightDataSearchResult struct {
 	BottomAds []struct {
 		Description string `json:"description"`
 		DisplayLink string `json:"display_link"`
@@ -157,9 +157,8 @@ type BrightDataResult struct {
 	} `json:"videos"`
 }
 
-func BrighdataResultToRawData(bdResult BrightDataResult) process_entity.RawSearchData {
+func BrighDataResultToRawSearchData(bdResult BrightDataSearchResult) process_entity.RawSearchData {
 	return process_entity.RawSearchData{
 		SearchType: bdResult.General.SearchType,
-		RequestID:  bdResult.Input.RequestID,
 	}
 }

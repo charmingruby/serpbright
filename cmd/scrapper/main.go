@@ -52,7 +52,7 @@ func main() {
 	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc)
 	go pubsub.Subscribe(event.ProcessCampaignTask, processCampaingTaskEventHandler.Handle)
 
-	//runBrightDataActions(svc, serp, cfg.DebugMode)
+	runBrightDataActions(svc, serp, cfg.DebugMode)
 }
 
 func runBrightDataActions(
@@ -67,6 +67,9 @@ func runBrightDataActions(
 	}
 
 	// Example processed data
-	fmt.Printf("RequestID: %s\n", op.SearchResult.RequestID)
-	fmt.Printf("SearchType: %s\n", op.SearchResult.SearchType)
+	fmt.Printf("ID: %s\n", op.SearchResult.ID)
+	fmt.Printf("Task ID: %s\n", op.SearchResult.Task.ID)
+	fmt.Printf("SearchUrl (Search Type simulating): %s\n", op.SearchResult.SearchUrl)
+	fmt.Printf("HTMLData: %s\n", op.SearchResult.HTMLData)
+	fmt.Printf("CreatedAt: %s\n", op.SearchResult.CreatedAt)
 }

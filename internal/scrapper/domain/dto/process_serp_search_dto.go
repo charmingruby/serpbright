@@ -10,5 +10,5 @@ type ProcessSerpSearchInputDTO struct {
 }
 
 type ProcessSerpSearchOutputDTO struct {
-	SearchResult process_entity.ResultantData
+	SearchResult process_entity.SearchResult
 }
