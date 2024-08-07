@@ -9,14 +9,16 @@ import (
 	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
 )
 
-func NewCampaignTaskProcessHandler(scrapperService usecase.ScrapperUseCase) CampaignTaskProcessHandler {
+func NewCampaignTaskProcessHandler(scrapperService usecase.ScrapperUseCase, debugMode bool) CampaignTaskProcessHandler {
 	return CampaignTaskProcessHandler{
 		ScrapperService: scrapperService,
+		DebugMode:       debugMode,
 	}
 }
 
 type CampaignTaskProcessHandler struct {
 	ScrapperService usecase.ScrapperUseCase
+	DebugMode       bool
 }
 
 func (h *CampaignTaskProcessHandler) Handle(msg []byte) {

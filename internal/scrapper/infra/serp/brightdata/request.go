@@ -9,6 +9,7 @@ import (
 	"log/slog"
 	"net/http"
 	"net/url"
+	"os"
 	"strconv"
 	"strings"
 
@@ -35,16 +36,15 @@ type brightDataRequestParams struct {
 
 func (s *BrightData) doRequest(campaignTask entity.CampaignTask) (BrightDataSearchResult, error) {
 	reqUrl := s.buildBrightDataRequestURL(campaignTask)
-
-	println(reqUrl)
+	if s.DebugMode {
+		slog.Info("BUILT REQUEST URL: " + reqUrl)
+	}
 
 	proxy, err := url.Parse(s.ProxyURL)
 	if err != nil {
 		slog.Error("Proxy URL parse error: " + err.Error())
 		return BrightDataSearchResult{}, err
 	}
-
-	slog.Info(fmt.Sprintf("Using proxy URL: %s", s.ProxyURL))
 
 	client := &http.Client{
 		Transport: &http.Transport{
@@ -55,7 +55,7 @@ func (s *BrightData) doRequest(campaignTask entity.CampaignTask) (BrightDataSear
 		},
 	}
 
-	req, err := http.NewRequest("GET", "https://www.google.com/search?q=pizza&brd_json=1", nil)
+	req, err := http.NewRequest("GET", reqUrl+"&brd_json=1", nil)
 	if err != nil {
 		slog.Error("Request creation error: " + err.Error())
 		return BrightDataSearchResult{}, err
@@ -78,6 +78,19 @@ func (s *BrightData) doRequest(campaignTask entity.CampaignTask) (BrightDataSear
 	if err != nil {
 		slog.Error("Error reading response body: " + err.Error())
 		return BrightDataSearchResult{}, err
+	}
+
+	if s.DebugMode {
+		file, err := os.Create("./docs/bright_data_response.json")
+		if err != nil {
+			return BrightDataSearchResult{}, err
+		}
+		defer file.Close()
+
+		_, err = io.Copy(file, resp.Body)
+		if err != nil {
+			return BrightDataSearchResult{}, err
+		}
 	}
 
 	var serpResult BrightDataSearchResult
@@ -105,8 +118,8 @@ func (s *BrightData) buildBrightDataRequestURL(campaignTask entity.CampaignTask)
 	}
 
 	builtParams := []string{
-		"uule=" + params.UULE,
 		"google_domain=" + params.GoogleDomain,
+		"uule=" + params.UULE,
 		"gl=" + params.GL,
 		"hl=" + params.HL,
 		"q=" + params.Q,

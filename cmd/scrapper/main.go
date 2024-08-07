@@ -11,7 +11,6 @@ import (
 	rabbitMQPubSub "github.com/charmingruby/serpright/internal/common/queue/rabbitmq"
 	"github.com/charmingruby/serpright/internal/scrapper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/event"
-	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/database/mongo_repository"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/queue"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata"
@@ -53,7 +52,7 @@ func main() {
 	serp := brightdata.NewBrightData(cfg)
 	svc := scrapper.NewService(serp, &searchResultRepo)
 
-	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc)
+	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc, cfg.DebugMode)
 
 	go pubsub.Subscribe(event.ProcessCampaignTask, processCampaingTaskEventHandler.Handle)
 
@@ -63,23 +62,4 @@ func main() {
 	<-sigs
 
 	slog.Info("Terminating gracefully")
-}
-
-func runBrightDataActions(
-	svc usecase.ScrapperUseCase,
-	brightData *brightdata.BrightData,
-	debug bool) {
-	slog.Info("Running BrightData actions...")
-
-	op, err := brightData.ExecSearch(svc, debug)
-	if err != nil {
-		slog.Error(fmt.Sprintf("%v", err.Error()))
-	}
-
-	// Example processed data
-	fmt.Printf("ID: %s\n", op.SearchResult.ID)
-	fmt.Printf("Task ID: %s\n", op.SearchResult.Task.ID)
-	fmt.Printf("SearchUrl (Search Type simulating): %s\n", op.SearchResult.SearchUrl)
-	fmt.Printf("HTMLData: %s\n", op.SearchResult.HTMLData)
-	fmt.Printf("CreatedAt: %s\n", op.SearchResult.CreatedAt)
 }

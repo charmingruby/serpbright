@@ -12,7 +12,7 @@ func (s *BrightData) Search(campaigntask entity.CampaignTask) (process_entity.Se
 		return process_entity.SearchResult{}, err
 	}
 
-	if debugMode {
+	if s.DebugMode {
 		if err := helper.DebugJSON(serchResult); err != nil {
 			return process_entity.SearchResult{}, err
 		}

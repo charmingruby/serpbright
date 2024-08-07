@@ -21,6 +21,7 @@ func NewBrightData(cfg config.Config) *BrightData {
 		Password:    cfg.BrightDataConfig.Password,
 		ProxyURL:    formattedProxyURL,
 		IncludeHTML: cfg.SearchConfig.IncludeHTML,
+		DebugMode:   cfg.DebugMode,
 	}
 }
 
@@ -31,4 +32,5 @@ type BrightData struct {
 	Password    string
 	ProxyURL    string
 	IncludeHTML bool
+	DebugMode   bool
 }
