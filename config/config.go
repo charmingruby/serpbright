@@ -7,14 +7,15 @@ import (
 )
 
 type environment struct {
-	BrightDataHost     string `env:"BRIGHT_DATA_HOST,required"`
-	BrightDataPort     int    `env:"BRIGHT_DATA_PORT,required"`
-	BrightDataUsername string `env:"BRIGHT_DATA_USERNAME,required"`
-	BrightDataPassword string `env:"BRIGHT_DATA_PASSWORD,required"`
-	RabbitMQURI        string `env:"RABBITMQ_URI,required"`
-	MongoURI           string `env:"MONGO_URI,required"`
-	MongoDatabase      string `env:"MONGO_DATABASE,required"`
-	DebugMode          bool   `env:"DEBUG_MODE,required"`
+	SearchResultIncludeHTML bool   `env:"SEARCH_RESULT_INCLUDE_HTML,required"`
+	BrightDataHost          string `env:"BRIGHT_DATA_HOST,required"`
+	BrightDataPort          int    `env:"BRIGHT_DATA_PORT,required"`
+	BrightDataUsername      string `env:"BRIGHT_DATA_USERNAME,required"`
+	BrightDataPassword      string `env:"BRIGHT_DATA_PASSWORD,required"`
+	RabbitMQURI             string `env:"RABBITMQ_URI,required"`
+	MongoURI                string `env:"MONGO_URI,required"`
+	MongoDatabase           string `env:"MONGO_DATABASE,required"`
+	DebugMode               bool   `env:"DEBUG_MODE,required"`
 }
 
 func NewConfig() (Config, error) {
@@ -41,6 +42,9 @@ func NewConfig() (Config, error) {
 			URI:          environment.MongoURI,
 			DatabaseName: environment.MongoDatabase,
 		},
+		SearchConfig: searchConfig{
+			IncludeHTML: environment.SearchResultIncludeHTML,
+		},
 	}
 
 	return cfg, nil
@@ -51,6 +55,7 @@ type Config struct {
 	BrightDataConfig brightDataConfig
 	RabbitMQConfig   rabbitMQConfig
 	MongoConfig      mongoConfig
+	SearchConfig     searchConfig
 }
 
 type brightDataConfig struct {
@@ -67,4 +72,8 @@ type rabbitMQConfig struct {
 type mongoConfig struct {
 	URI          string
 	DatabaseName string
+}
+
+type searchConfig struct {
+	IncludeHTML bool
 }

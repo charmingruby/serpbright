@@ -5,6 +5,7 @@ import (
 	"log"
 
 	"github.com/charmingruby/serpright/internal/scrapper/domain/dto"
+	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/usecase"
 )
 
@@ -19,12 +20,16 @@ type CampaignTaskProcessHandler struct {
 }
 
 func (h *CampaignTaskProcessHandler) Handle(msg []byte) {
-	var ucInput dto.ProcessSerpSearchInputDTO
-	if err := json.Unmarshal(msg, &ucInput); err != nil {
+	var task entity.CampaignTask
+	if err := json.Unmarshal(msg, &task); err != nil {
 		log.Fatal(err)
 	}
 
-	output, err := h.ScrapperService.ProcessSerpSearchUseCase(ucInput)
+	input := dto.ProcessSerpSearchInputDTO{
+		CampaignTask: task,
+	}
+
+	output, err := h.ScrapperService.ProcessSerpSearchUseCase(input)
 	if err != nil {
 		log.Fatal(err)
 	}

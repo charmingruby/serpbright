@@ -1,0 +1,2410 @@
+{
+    "request_info": {
+      "success": true,
+      "credits_used": 1,
+      "credits_used_this_request": 1,
+      "credits_remaining": 19999,
+      "credits_reset_at": "2021-01-01T00:00:00.000Z"
+    },
+    "search_metadata": {
+      "created_at": "2021-01-01T00:00:00.000Z",
+      "processed_at": "2021-01-01T00:00:00.000Z",
+      "total_time_taken": 1.5,
+      "engine_url": "https://www.google.com/search?q=pizza&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&gl=us&hl=en",
+      "html_url": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United+States&engine=google&output=html",
+      "json_url": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United+States&engine=google&output=json",
+      "location_auto_message": "We have automatically set the 'google_domain', 'gl' and 'hl' parameters to match the supplied location of 'United States'. You can stop this behaviour by setting the 'location_auto' parameter to 'false'."
+    },
+    "search_parameters": {
+      "q": "pizza",
+      "location": "United States",
+      "engine": "google"
+    },
+    "search_information": {
+      "original_query_yields_zero_results": false,
+      "total_results": 15810000000,
+      "time_taken_displayed": 0.98,
+      "query_displayed": "pizza",
+      "search_tabs": [
+        {
+          "position": 1,
+          "text": "Maps",
+          "link": "https://maps.google.com/maps?q=pizza&uule=w+CAIQICINVW5pdGVkIFN0YXRlcw&gl=us&hl=en&um=1&ie=UTF-8&sa=X&ved=2ahUKEwif_eK50_r4AhVogoQIHc_uD6YQ_AUoAXoECAIQAw"
+        },
+        {
+          "position": 2,
+          "text": "Images",
+          "link": "https://www.google.com/search?q=pizza&gl=us&hl=en&source=lnms&tbm=isch&sa=X&ved=2ahUKEwif_eK50_r4AhVogoQIHc_uD6YQ_AUoAnoECAIQBA"
+        },
+        {
+          "position": 3,
+          "text": "News",
+          "link": "https://www.google.com/search?q=pizza&gl=us&hl=en&source=lnms&tbm=nws&sa=X&ved=2ahUKEwif_eK50_r4AhVogoQIHc_uD6YQ_AUoA3oECAIQBQ"
+        },
+        {
+          "position": 4,
+          "text": "Shopping",
+          "link": "https://www.google.com/search?q=pizza&gl=us&hl=en&source=lnms&tbm=shop&sa=X&ved=2ahUKEwif_eK50_r4AhVogoQIHc_uD6YQ_AUoBHoECAIQBg"
+        }
+      ]
+    },
+    "ads": [
+      {
+        "position": 1,
+        "block_position": "top",
+        "title": "Samsung Neo QLED TV - Shop Our Latest Offers Today",
+        "link": "https://www.samsung.com/us/tvs/neoqled-tv/",
+        "tracking_link": "https://www.google.com/aclk?sa=l&ai=DChcSEwi1no3h1sj2AhWsPq0GHW9cCV8YABAAGgJwdg&sig=AOD64_3zZZZ5RkP-K0GIZRfWngy0-9JbTA&q&adurl",
+        "domain": "www.samsung.com",
+        "displayed_link": "https://www.samsung.com/",
+        "description": "Add Samsung Access To Bundle Your New Neo QLED TV, Samsung Care+ And Premium Content. The Breakthrough Features Of Neo QLED Do More With Your Entertainment Than Ever Imagined. Motion Xcelerator Turbo+ Q-Symphony. SpaceFit Sound. Ultra Viewing Angle.",
+        "sitelinks": [
+          {
+            "title": "Explore Samsung TVs",
+            "description": "Explore Samsung TVs Find The Right Samsung TV For You. QLED 8K, The Frame, Plus Many More.",
+            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwi1no3h1sj2AhWsPq0GHW9cCV8YABALGgJwdg&sig=AOD64_14Oh-3nbCOrmHs7ebXnRla29871g&ved=2ahUKEwjZ0_zg1sj2AhUcHjQIHS7aCPIQqyQoAHoECAMQBQ&adurl="
+          },
+          {
+            "title": "Samsung Neo QLED 8K TVs",
+            "description": "Samsung Neo QLED 8K TVs Preorder A 2022 Model By 3/27 And Get Free TV Mounting ($120 Value).",
+            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwi1no3h1sj2AhWsPq0GHW9cCV8YABAPGgJwdg&sig=AOD64_2yyqGxf6LAIdTdRIYu9J52fNzigQ&ved=2ahUKEwjZ0_zg1sj2AhUcHjQIHS7aCPIQqyQoAXoECAMQBg&adurl="
+          },
+          {
+            "title": "Preorder 2022 The Frame",
+            "description": "Preorder 2022 The Frame Preorder & Get Free Installation Plus 50% Off Customizable Bezels.",
+            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwi1no3h1sj2AhWsPq0GHW9cCV8YABARGgJwdg&sig=AOD64_1qZz5M6TkVCasQjnc-tIRvxunwYA&ved=2ahUKEwjZ0_zg1sj2AhUcHjQIHS7aCPIQqyQoAnoECAMQBw&adurl="
+          },
+          {
+            "title": "Samsung Access For TV",
+            "description": "Samsung Access For TV Discover A New Way To TV. Premium TV, Premium Content, Premium Care.",
+            "link": "https://www.google.com/aclk?sa=l&ai=DChcSEwi1no3h1sj2AhWsPq0GHW9cCV8YABATGgJwdg&sig=AOD64_1IwKQNUn9uakD4GmjncceH8k5V1w&ved=2ahUKEwjZ0_zg1sj2AhUcHjQIHS7aCPIQqyQoA3oECAMQCA&adurl="
+          }
+        ]
+      },
+      {
+        "position": 2,
+        "block_position": "top",
+        "title": "Samsung Televisions - From the Experts at CDW",
+        "link": "https://www.cdw.com/search/electronics/tv-video/tvs/?w=EN3",
+        "tracking_link": "https://www.google.com/aclk?sa=l&ai=DChcSEwi1no3h1sj2AhWsPq0GHW9cCV8YABAEGgJwdg&ae=2&sig=AOD64_0pxgkcPhM79D_vRpLM1vybwAGH8g&q&adurl",
+        "domain": "www.cdw.com",
+        "displayed_link": "https://www.cdw.com",
+        "description": "Samsung TVs with Exceptional Picture Quality and Sound. Order Online Today. 300+ products. Free account registration. Authorized reseller. Dedicated account teams."
+      }
+    ],
+    "organic_results": [
+      {
+        "position": 1,
+        "title": "Pizza Hut: Pizza Delivery | Pizza Carryout | Coupons | Wings ...",
+        "link": "https://www.pizzahut.com/",
+        "domain": "www.pizzahut.com",
+        "displayed_link": "https://www.pizzahut.com",
+        "snippet": "DELIVERY & CARRYOUT LOCATIONS ARE OPEN! Order pizza online from a store near you. View our full menu, nutritional information, store locations, and more.",
+        "prerender": false,
+        "snippet_matched": [
+          "pizza"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "Find a Pizza Hut",
+              "link": "https://www.pizzahut.com/link.php?locator"
+            },
+            {
+              "title": "Pizza Delivery",
+              "link": "https://www.pizzahut.com/hutrewards"
+            },
+            {
+              "title": "Pizza Hut Franchise",
+              "link": "https://franchise.pizzahut.com/"
+            },
+            {
+              "title": "Track Your Pizza with Our",
+              "link": "https://blog.pizzahut.com/track-your-pizza-with-our-delivery-tracker/"
+            }
+          ]
+        },
+        "rich_snippet": {
+          "top": {
+            "detected_extensions": {
+              "rating": 7.2
+            },
+            "extensions": [
+              "Rating: 7.2/10",
+              "‎Review by Alexander Tozzi"
+            ],
+            "attributes": [
+              {
+                "name": "Resolution",
+                "value": "4k"
+              },
+              {
+                "name": "Sub-Type",
+                "value": "VA"
+              },
+              {
+                "name": "Type",
+                "value": "LED"
+              }
+            ],
+            "attributes_flat": "Resolution: 4k, Sub-Type: VA, Type: LED"
+          }
+        },
+        "about_this_result": {
+          "source": {
+            "name": "Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Pizza_Hut",
+            "description": "Pizza Hut is an American multinational restaurant chain and international franchise founded in 1958 in Wichita, Kansas by Dan and Frank Carney. It provides pizza and other Italian-American dishes, including pasta, side dishes and desserts."
+          },
+          "connection_secure": {
+            "raw": "Your connection to this site is <b>secure</b>",
+            "parsed": true
+          },
+          "your_search_and_this_result": [
+            "These <span>search terms</span> appear in the result: <b> best</b>, <b>head</b>, and <b>shavers</b>",
+            "<span>Terms</span> related to your search appear in the result: <b> razor</b> and <b>shaver</b>",
+            "This result has <span>images</span> related to your search",
+            "Other websites with your search terms <span>link</span> to this result",
+            "The result is in <span>English</span>",
+            "This result seems relevant for searches from many regions, including <span>the United States</span>"
+          ],
+          "search_terms": [
+            "best",
+            "head",
+            "shavers"
+          ],
+          "related_terms": [
+            "razor",
+            "shaver"
+          ]
+        },
+        "date": "Apr 12, 2020",
+        "date_utc": "2020-04-12T11:00:00.000Z",
+        "block_position": 3
+      },
+      {
+        "position": 2,
+        "title": "Domino's: Pizza Delivery & Carryout, Pasta, Chicken & More",
+        "link": "https://www.dominos.com/",
+        "domain": "www.dominos.com",
+        "displayed_link": "https://www.dominos.com",
+        "snippet": "Order pizza, pasta, sandwiches & more online for carryout or delivery from Domino's. View menu, find locations, track orders. Sign up for Domino's email ...",
+        "prerender": false,
+        "snippet_matched": [
+          "pizza"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "About Pizza",
+              "link": "https://www.dominos.com/en/about-pizza/"
+            },
+            {
+              "title": "Pizza",
+              "link": "https://www.dominos.com/en/pages/order/menu#!/menu/category/pizza/"
+            },
+            {
+              "title": "Order Online",
+              "link": "https://www.dominos.com/en/pages/order/"
+            },
+            {
+              "title": "Coupons",
+              "link": "https://www.dominos.com/en/pages/order/coupon"
+            }
+          ]
+        },
+        "about_this_result": {
+          "source": {
+            "name": "Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Domino's_Pizza",
+            "description": "Domino's Pizza, Inc. is an American multinational pizza restaurant chain founded in 1960 and led by CEO Richard Allison. The corporation is Delaware domiciled and headquartered at the Domino's Farms Office Park in Ann Arbor, Michigan."
+          },
+          "your_search_and_this_result": [
+            "These <span>search terms</span> appear in the result: <b> best</b>, <b>head</b>, and <b>shavers</b>",
+            "<span>Terms</span> related to your search appear in the result: <b> razor</b> and <b>shaver</b>",
+            "This result has <span>images</span> related to your search",
+            "Other websites with your search terms <span>link</span> to this result",
+            "The result is in <span>English</span>",
+            "This result seems relevant for searches from many regions, including <span>the United States</span>"
+          ],
+          "search_terms": [
+            "best",
+            "head",
+            "shavers"
+          ],
+          "related_terms": [
+            "razor",
+            "shaver"
+          ]
+        },
+        "rich_snippet": {
+          "top": {
+            "detected_extensions": {},
+            "extensions": [
+              "‎About Pizza",
+              "‎Pizza",
+              "‎Order Online",
+              "‎Coupons"
+            ]
+          }
+        },
+        "block_position": 4
+      },
+      {
+        "position": 3,
+        "title": "Papa John's Pizza Delivery & Carryout – Best Deals on Pizza ...",
+        "link": "https://www.papajohns.com/",
+        "domain": "www.papajohns.com",
+        "displayed_link": "https://www.papajohns.com",
+        "snippet": "Enjoy the ease of ordering delicious pizza for delivery or carryout from a Papa John's near you. Start tracking the speed of your delivery and earn rewards ...",
+        "prerender": false,
+        "snippet_matched": [
+          "pizza"
+        ],
+        "sitelinks": {
+          "inline": [
+            {
+              "title": "Menu",
+              "link": "https://www.papajohns.com/order/menu"
+            },
+            {
+              "title": "Specials",
+              "link": "https://www.papajohns.com/order/specials"
+            },
+            {
+              "title": "Papa Rewards",
+              "link": "https://www.papajohns.com/order/papa-rewards"
+            },
+            {
+              "title": "Log In",
+              "link": "https://www.papajohns.com/order/sign-in"
+            }
+          ]
+        },
+        "about_this_result": {
+          "source": {
+            "name": "Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Papa_John's_Pizza",
+            "description": "Papa John's is an US-based pizza restaurant franchise. It is the fourth largest pizza delivery restaurant chain in the United States, with headquarters in Atlanta, Georgia."
+          }
+        },
+        "rich_snippet": {
+          "top": {
+            "detected_extensions": {},
+            "extensions": [
+              "‎Menu",
+              "‎Specials",
+              "‎Papa Rewards",
+              "‎Log In"
+            ]
+          }
+        },
+        "block_position": 5
+      },
+      {
+        "position": 4,
+        "title": "Pizza - Wikipedia",
+        "link": "https://en.wikipedia.org/wiki/Pizza",
+        "domain": "en.wikipedia.org",
+        "displayed_link": "https://en.wikipedia.org › wiki › Pizza",
+        "snippet": "Pizza is an Italian dish consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ...",
+        "prerender": false,
+        "snippet_matched": [
+          "Pizza"
+        ],
+        "about_this_result": {
+          "source": {
+            "name": "Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Wikipedia",
+            "description": "Wikipedia is a free content, multilingual online encyclopedia written and maintained by a community of volunteers through a model of open collaboration, using a wiki-based editing system. Individual contributors, also called editors, are known as Wikipedians."
+          }
+        },
+        "rich_snippet": {
+          "top": {
+            "detected_extensions": {},
+            "attributes": [
+              {
+                "name": "Main ingredients",
+                "value": "Dough, sauce (usually tomato ..."
+              },
+              {
+                "name": "Serving temperature",
+                "value": "Hot or warm"
+              },
+              {
+                "name": "Region or state",
+                "value": "Campania (‎Naples‎)‎"
+              },
+              {
+                "name": "Course",
+                "value": "Lunch or dinner"
+              }
+            ],
+            "attributes_flat": "Main ingredients: Dough, sauce (usually tomato ..., Serving temperature: Hot or warm, Region or state: Campania (‎Naples‎)‎, Course: Lunch or dinner"
+          }
+        },
+        "block_position": 9
+      },
+      {
+        "position": 5,
+        "title": "Marcos.com",
+        "link": "https://www.marcos.com/",
+        "domain": "www.marcos.com",
+        "displayed_link": "https://www.marcos.com",
+        "snippet": "Enjoy authentic Italian quality pizza. Dough made fresh every day. Sauce from the original Giammarco recipe. Order online for delivery or carry-out.",
+        "prerender": false,
+        "snippet_matched": [
+          "pizza"
+        ],
+        "about_this_result": {
+          "source": {
+            "name": "Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Marco's_Pizza",
+            "description": "Marco's Pizza, operated by Marco's Franchising, LLC, is an American restaurant chain and interstate franchise based in Toledo, Ohio, that specializes in Italian-American cuisine. The first store was opened in Oregon, Ohio on Starr Ave. It was founded by Italian immigrant Pasquale \"Pat\" Giammarco in 1978."
+          }
+        },
+        "block_position": 10
+      },
+      {
+        "position": 6,
+        "title": "Pizza@",
+        "link": "https://www.pizza-at.com/",
+        "domain": "www.pizza-at.com",
+        "displayed_link": "https://www.pizza-at.com",
+        "snippet": "Locally Owned. Fresh. Fast-fired. Custom pizza baked in 120 seconds! We're making pizza personal. Now in 6 Florida locations.",
+        "prerender": false,
+        "snippet_matched": [
+          "pizza",
+          "pizza"
+        ],
+        "about_this_result": {
+          "source": {
+            "first_indexed": {
+              "raw": "pizza-at.com was first indexed by Google in May 2013",
+              "parsed": 2013
+            }
+          }
+        },
+        "block_position": 11
+      },
+      {
+        "position": 7,
+        "title": "Blaze Pizza - Fast-Fire'd Pizzas - Order Online | Blaze Pizza",
+        "link": "https://www.blazepizza.com/",
+        "domain": "www.blazepizza.com",
+        "displayed_link": "https://www.blazepizza.com",
+        "snippet": "Get fired up with Fast-Fire'd Pizzas from Blaze! Made just the way you want. Order online for delivery or pickup.",
+        "prerender": false,
+        "snippet_matched": [
+          "Pizzas"
+        ],
+        "about_this_result": {
+          "source": {
+            "name": "Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Blaze_Pizza",
+            "description": "Blaze Pizza is a Pasadena, California-based chain within the fast-casual dining restaurants category. Founded in 2011 by Elise and Rick Wetzel of Wetzel's Pretzels, Blaze Pizza was modeled after the Chipotle concept as a made-to-order approach to serving customers."
+          }
+        },
+        "block_position": 12
+      },
+      {
+        "position": 8,
+        "title": "Pizza Recipes - Serious Eats",
+        "link": "https://www.seriouseats.com/pizza-recipes-5117816",
+        "domain": "www.seriouseats.com",
+        "displayed_link": "https://www.seriouseats.com › Mains › Mains By Type",
+        "snippet": "Our crisp, crunchy, chewy, and cheesy pizza recipes include everything from classic Neapolitan and New York pies to Sicilian and Detroit-style.",
+        "prerender": false,
+        "snippet_matched": [
+          "pizza"
+        ],
+        "about_this_result": {
+          "source": {
+            "first_indexed": {
+              "raw": "This result comes from www.seriouseats.com"
+            }
+          }
+        },
+        "block_position": 13
+      },
+      {
+        "position": 9,
+        "title": "Donatos Pizza | Every Piece Is Important",
+        "link": "https://www.donatos.com/",
+        "domain": "www.donatos.com",
+        "displayed_link": "https://www.donatos.com",
+        "snippet": "Pizza | Salads | Subs.",
+        "prerender": false,
+        "snippet_matched": [
+          "Pizza"
+        ],
+        "about_this_result": {
+          "source": {
+            "name": "Wikipedia",
+            "link": "https://en.wikipedia.org/wiki/Donatos_Pizza",
+            "description": "Donatos Pizza is a pizza delivery restaurant franchisor headquartered in Gahanna, Ohio, United States. It has nearly 200 locations in ten states, with the majority of locations in Ohio. Donatos is also served at several venue outlets including Ohio Stadium and the Smithsonian National Air and Space Museum."
+          }
+        },
+        "block_position": 15
+      }
+    ],
+    "shopping_graphs": [
+      [
+        {
+          "position": 1,
+          "title": "Sam Edelman Women's Wilson",
+          "price": "$89.90",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 89.9,
+            "regular_price": "$130",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 130
+            }
+          },
+          "rating": 4.4,
+          "reviews": 73,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcROe2qUXGtG_BON62bUdYTv394DBCN7bSKnu4LhkGwApfN-dhsdmNnjxAQG04LAQ5rMrscmLTdi9shKzEI_fTAZQTBEaF-pFUJVFs2AUL-_SvCRzgldlcxB",
+          "product_status": "SALE",
+          "stores_that_sell": "Nordstrom, 5+ stores"
+        },
+        {
+          "position": 2,
+          "title": "Nike Dunk Low University Blue",
+          "price": "$430.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 430,
+            "regular_price": "$430.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 430
+            }
+          },
+          "rating": 4.6,
+          "reviews": 21,
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSGTvBgbYE0UibRtZhQTnmkNkQwA9JzPXADfz5HgrnD7_TXIDzX1fkFOlQPyFnlktmbTJnMIARrT_EbzibuuTmQqX5Rv84dEsWAZL1FR3NsP37h1lTI6BbE",
+          "stores_that_sell": "StockX, 5+ stores"
+        },
+        {
+          "position": 3,
+          "title": "Vans Authentic Men's",
+          "price": "$59.95",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 59.95,
+            "regular_price": "$59.95",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 59.95
+            }
+          },
+          "rating": 4.6,
+          "reviews": 185,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQBhWj90kwnVE57dP4oygYqZuikBXl4Ku8GJWLTt-uwCjm-S3cGaiRvcXWuFS6rL-bzpnKoif5gGexsgDR1qjqiFsXZVhEyzpTVEZQ5xhtX17cVG9_8fVWM4w",
+          "stores_that_sell": "Zappos.com, 6+ stores"
+        },
+        {
+          "position": 4,
+          "title": "Sam Edelman Women's Ethyl",
+          "price": "$70.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 70,
+            "regular_price": "$70.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 70
+            }
+          },
+          "rating": 4.1,
+          "reviews": 345,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQj7j1Efqh8zSM4YYD2AwtwrmsJzCX5lDTsTb06Z9nPiFFP32dRjDbr_si4bD3jkpCiTvFC6-qONRAIUCe7sjC8TnB5elTdtk-66EeqZZCMY4e2ZfzbUUuJ3Q",
+          "stores_that_sell": "Amazon.com, 6+ stores"
+        },
+        {
+          "position": 5,
+          "title": "Men's Nike Dunk Low Retro SE 'Industrial Blue",
+          "price": "$139.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 139,
+            "regular_price": "$139.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 139
+            }
+          },
+          "rating": 4.6,
+          "reviews": 141,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSRQHiTneq4LlKCvmmQO00yzAXtdCC1C2WU9_rjioSt4gzMqtoeNDPkPPhcMf4wfD01JqX6sx1IFGeQmUPCxpl4wXYoE5HifjVzqL6Wc6G722Or1V50Mz29MQ",
+          "stores_that_sell": "StockX, 6+ stores"
+        },
+        {
+          "position": 6,
+          "title": "Men's Air Jordan 1 Retro High OG Shoes in Blue, Size: 3.5 | DZ5485-410",
+          "price": "$180.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 180,
+            "regular_price": "$180.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 180
+            }
+          },
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRkuBqT13H7K_tzOUBpwqhr6BMl34n-ck2gPDxLjCzolir8OEoYcwebsYs2SS9JSBe6h9AJlH35uDNimbUhtzQgJ-owHYIPNxTdei0tBLwGdnrR1vwWyGTN",
+          "stores_that_sell": "Nike"
+        },
+        {
+          "position": 7,
+          "title": "Men's Air Jordan 1 Mid 'Obsidian",
+          "price": "$132.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 132,
+            "regular_price": "$132.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 132
+            }
+          },
+          "rating": 4.8,
+          "reviews": 105,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSqwZa5L-fVePY6m8BnYSKUG-qRCmpRbBIjJW-9w7UkeV9iIz5XC3iHRliMSL0t6j8vcy78tK3OIU6qtGAAaRLNVZmgPMezRmx8em_t_cPj-ih6MRh9yVNW",
+          "stores_that_sell": "StockX, 5+ stores"
+        },
+        {
+          "position": 8,
+          "title": "Skechers Women's Bobs B Cute",
+          "price": "$50.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 50,
+            "regular_price": "$50.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 50
+            }
+          },
+          "rating": 4.7,
+          "reviews": 3000,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRVeUfQznKIOuJ3Y3icSQnLxgPHBHS-IHcIXytxfJfHH6skulo06zukpKQTTZIlG5Z9iz_PmTyKnw2g-iMAZZPIaUd0g7YagWVn55_30JaGEARfESm-TMBeag",
+          "stores_that_sell": "Skechers.com, 6+ stores"
+        }
+      ],
+      [
+        {
+          "position": 1,
+          "title": "Women's Hoka Clifton 9",
+          "price": "$144.99",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 144.99,
+            "regular_price": "$144.99",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 144.99
+            }
+          },
+          "rating": 4.6,
+          "reviews": 402,
+          "stores_that_sell": "DICK'S Sporting Goods, 6+ stores"
+        },
+        {
+          "position": 2,
+          "title": "Vans Classic Slip-On",
+          "price": "$60.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 60,
+            "regular_price": "$60.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 60
+            }
+          },
+          "rating": 4.6,
+          "reviews": 6000,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSULWsuhQrEjYdPwZln0BCUJrShmhlY7OZ0Y_HcMulw4sWKCS3tpBb10ZmIISO1FfnFQsv-7VbGJvm7PiqQuiTwF9D8_LLFit087uNgXzLSdOrlF3bPnc5H",
+          "stores_that_sell": "Vans, 6+ stores"
+        },
+        {
+          "position": 3,
+          "title": "Crocs Classic Clog (Ice Blue)",
+          "price": "$34.99",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 34.99,
+            "regular_price": "$34.99",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 34.99
+            }
+          },
+          "rating": 4.6,
+          "reviews": 9000,
+          "image": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRIBUgjnMSuVRTuot2-FyEk2s6U3z8Mgc7rQI4Cy4QQjKZAD6H_cGyVviYDcQZi37ixnxo1qM4XIjA72cs-d4MsPT4PXXlqUFVi3cDbM_H6bsHp3BdtcB88",
+          "stores_that_sell": "Amazon.com, 3+ stores"
+        },
+        {
+          "position": 4,
+          "title": "Elisabet Tang High Heels, Womens Pointed Toe Slip On, Royal Blue, Size 9.0",
+          "price": "$46.99",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 46.99,
+            "regular_price": "$46.99",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 46.99
+            }
+          },
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRBuEIlUQc-RbhS-TI68uVwwono6Bx96MwvuTCP2SVhossvzMRMCUf4pl2qkYWhPNz1zxYHCNPEMdSAuHmsbS265LZ5OwLLVVdUfuc07eELjm3RCnqRbTx9",
+          "stores_that_sell": "Amazon.com - Seller"
+        },
+        {
+          "position": 5,
+          "title": "Womens Pointed Toe Ankle Strap Pumps Blue Size 6",
+          "price": "$24.99",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 24.99,
+            "regular_price": "$24.99",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 24.99
+            }
+          },
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSMM-TubtwQ2KZuy62dP-tVgtXWkERbbbadSRqB4NXsPX5RCtUerIUDlm8aU76o61jDNvff_k39IdOMsPQP70E5csaUR393OoqJqO3vB9XmNhBzOlOGoiN2tw",
+          "stores_that_sell": "Rainbow Shops"
+        },
+        {
+          "position": 6,
+          "title": "Air Jordan 1 Retro High OG 'True Blue Mens",
+          "price": "$166.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 166,
+            "regular_price": "$166.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 166
+            }
+          },
+          "rating": 4.6,
+          "reviews": 206,
+          "stores_that_sell": "StockX, 3+ stores"
+        },
+        {
+          "position": 7,
+          "title": "LifeStride Women's Kascade Wedge",
+          "price": "$34.99",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 34.99,
+            "regular_price": "Was $49",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 49
+            }
+          },
+          "rating": 3.8,
+          "reviews": 38,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRV0QtckajicTAjzvdNW3Hm0OeVr0Lcjl6pWhP9g4uGq-LiiaMvO5uJ-4Au2B8EwV3LFcFhBbpVyVsUgodENJUsu8d-YeNshMqe5J_7IgIBHJeHLgwr47k6",
+          "product_status": "SALE",
+          "stores_that_sell": "Amazon.com, 6+ stores"
+        },
+        {
+          "position": 8,
+          "title": "Air Jordan 1 Low True Blue Mens",
+          "price": "$142.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 142,
+            "regular_price": "$142.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 142
+            }
+          },
+          "rating": 4.9,
+          "reviews": 510,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcS45R4JLuVGxi8LrrFr-4FukzhBqDEjQQ8eHlJWvMcuPk2PikN6R3mqxXzbPq-Yw-Dd6W1vhtbvjUB7BTscVtyoYE0bgxorACciYG1bUDSJftvUymQP10e53w",
+          "stores_that_sell": "GOAT, 4+ stores"
+        }
+      ],
+      [
+        {
+          "position": 1,
+          "title": "Windsor Party Girl Platform Block Heels in Royal Blue",
+          "price": "$24.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 24,
+            "regular_price": "$30",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 30
+            }
+          },
+          "rating": 4.5,
+          "reviews": 2,
+          "product_status": "SALE",
+          "stores_that_sell": "Windsor"
+        },
+        {
+          "position": 2,
+          "title": "Converse Unisex Chuck Taylor All Star Sneaker",
+          "price": "$60.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 60,
+            "regular_price": "$60.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 60
+            }
+          },
+          "rating": 5,
+          "reviews": 2,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcQU2qH0MUnXI5unNFYKWQ9bbKfZu3Y7_ZfT4NZGzmuCTbKPnOzEV3hjpnuB11h7Qv6VjP2KKqkzFDC6IA0eHlhXIlo-JAMbqDPpdIpwAbbqGWak0Z9p-33eVw",
+          "stores_that_sell": "Converse"
+        },
+        {
+          "position": 3,
+          "title": "Hey Dude Women's Wendy Shoes",
+          "price": "$47.95",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 47.95,
+            "regular_price": "$47.95",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 47.95
+            }
+          },
+          "rating": 4.8,
+          "reviews": 404,
+          "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRCQrJ9ZXO9s8W0LrgyT_YmISCU2GPdlCVxQ3hS_LI8qrfcqmNIX6RhgQrdm_thTnP5LWNMG4YzViUljkUmTEuWuGIAeqmgiFl4R_ylqzv0CGy3lFqpWK2-Hw",
+          "stores_that_sell": "Amazon.com - Seller, 1+ stores"
+        },
+        {
+          "position": 4,
+          "title": "Air Jordan 4 Retro University Blue",
+          "price": "$324.99",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 324.99,
+            "regular_price": "$324.99",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 324.99
+            }
+          },
+          "rating": 4.7,
+          "reviews": 325,
+          "image": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR44HnXalwUYrF3PJ9-_3DmgqsgbuIEaciZ9d4oPVW2-HqtMXjU05TpYNJN_vFJkzzEh-pG1TR1DabqCGoyeF7Gupb2L2i51I3hahEJDfjptE2b6cVK5cOpYA",
+          "stores_that_sell": "eBay, 5+ stores"
+        },
+        {
+          "position": 5,
+          "title": "Skechers Women's Uno Night Shades",
+          "price": "$80.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 80,
+            "regular_price": "$80.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 80
+            }
+          },
+          "rating": 4.7,
+          "reviews": 2000,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9aA80LYNvSBLKbdZrEpH9oM8Uz8ObCC-PxQMAmPnevlVew4C-3RtsDYotwtY-B1QXYiqqlRsXuZPIaSienUL5M9DRGhzT-CU-FWIUTvbT2kQs4jv7wPerpA",
+          "stores_that_sell": "Skechers.com, 6+ stores"
+        },
+        {
+          "position": 6,
+          "title": "Mens Converse Chuck Taylor All Star High 'Snorkel",
+          "price": "$89.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 89,
+            "regular_price": "$89.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 89
+            }
+          },
+          "rating": 3.7,
+          "reviews": 3,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTeqvGyKGhDpmF7yT_1MSi0-M9lwviaWep4JxoM4MQEOTUc6IkOmOAuoNJJnQYE5uZ31uoNxcxPeykpNyAKols4Z9d-nC0xFjF05WErmfKKAtNMN1YLO3DTKQ",
+          "stores_that_sell": "GOAT"
+        },
+        {
+          "position": 7,
+          "title": "New Balance Kids 574",
+          "price": "$84.99",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 84.99,
+            "regular_price": "$84.99",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 84.99
+            }
+          },
+          "rating": 4.7,
+          "reviews": 610,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcTIksu12idgFy5Ag9kA-DGxe5LnED1bRFM3-fP5ZNI_izwshV0aH1I3yHJVdeRjWXLR53GAdKpnM2yw_iNCERg6DiByXcIhd758RWdw85CMoy384hv3vkRW",
+          "stores_that_sell": "New Balance, 6+ stores"
+        },
+        {
+          "position": 8,
+          "title": "Converse Women's Chuck Taylor All Star Lift Platform",
+          "price": "$75.00",
+          "price_parsed": {
+            "symbol": "$",
+            "value": 75,
+            "regular_price": "$75.00",
+            "regular_price_parsed": {
+              "symbol": "$",
+              "value": 75
+            }
+          },
+          "rating": 4.5,
+          "reviews": 66,
+          "image": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcT9QDfqbphr1gH8LrOfOJWWh-vI7yaslvCV83HfAtA0A5hDcAW_Jii_SzhiUay3WZpnSMFgObb3a-eQMIxdOiZxZ8UB6X3MAp7u_-izcsfT2oUP0Oy-fcAh",
+          "stores_that_sell": "Converse, 6+ stores"
+        }
+      ]
+    ],
+    "search_refinement": {
+      "items": [
+        {
+          "title": "Jersey",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=How+to+grow+Jersey+tomatoes%3F&stick=H4sIAAAAAAAAAIWQsQrCMBCGEeshcRCCiGCRUNTFzVkQuihOgr5AKrEW215JI-qaJ_AZfFLTWGqHglOS-767I3935cFOyFw8l4ML3plCFkp7JlyhyN8dd1srf9WKrjXMSdlP_4iMOHtUOR1tDI_SsGIsSllmiIYZAf92ugpFx01SYJnxFqRX9MQ8VWYNdRsnllSDR7pbEckYMaHDQmWX8lk1aJgQJ-ZJVgrFlZ1R1gTzT59LKeLmdZwFlmoYkraPD9o_WvpNI8CHhinpHDLElI7rQdnSL6cXtD7e3yqqkwEAAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARAy",
+          "block_position": -1
+        },
+        {
+          "title": "Pots",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Growing+tomatoes+in+pots&stick=H4sIAAAAAAAAAH1QvQrCMBBGtIfEQQhSBEWCqIubsyB0UZwEfYFUoi22vZJGrGuewGfwSU1jqR2KU3Lfz33c111POwdU2WoQ4IMpZFdp35grFNnbGW7NHCbXCmJhwlJj0LAgsBcyE0863tW8X6zSbzQwYiPon11zAt79fBOKjppEvuWMbkl6hSfiiTIxdNy4sWQ1TEl3J0IZIcbULaQsKMfKoGFCOhGP01JQfNkFZU1g7vS4lCJqjuPMt6wGl7Q9zGn_ZNlvGz7mGmbEOaaICR3Vi7LQr6cXtD5NRIrmjQEAAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARA0",
+          "block_position": -1
+        },
+        {
+          "title": "Bucket",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Growing+tomatoes+in+buckets&stick=H4sIAAAAAAAAAH1QPQrCMBRGtI8SByFIERQJoi5uzoLQxeIk6AVSibbY9pU0Yl1zAs_gSW1jqR2KU_K-v5d89mYG7v18E2o9DPDBFLKrNGfMFYrsbY13xRwm1xpiYcJ8Y8k0LAnshczEk068hv2L1ZatBkZ6B1QZHbXFpVhmLUj1FPp_54r0S0_EE1WsoZPWxIrVMCO2J0IZIcbUKaUsqMbaoGFKehGP00pQXtkFZUNQ_NPlUoqofR1nvmE1OKTrYk4HJ8N-2_Ax1zAn1jFFTOi4WZSBfj29oPMBEZF70JIBAAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARA2",
+          "block_position": -1
+        },
+        {
+          "title": "in planters",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Growing+tomatoes+in+planters&stick=H4sIAAAAAAAAAOOwUeLOzFMoyEnMK0ktKjYSycgvVyjJV0gvAtO5iSX5qcWLWGXcgfzMvHS4kAKSpiY2NS42LyAjtVJIxgNJP0QMrse-iU2BiyUgv6RYSAKreUCZJjZVLjan0uTs1BIhaWyKksByQHXaXMgOFyLgQiUuDo_UzKKc_PxcITGQUoUMKBeuoYlNjoslJzG3AKoAxFRIyy9CUgD0p1NiUVFqDnbrEhWSwLJNbGJczE75FUL8IWBZSGgk5Vc0salwsQYX5OfnCUkjBxRYCBFOE9gYAdDSyRKYAQAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARA4",
+          "block_position": -1
+        },
+        {
+          "title": "Heirloom",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Grow+heirloom+tomatoes&stick=H4sIAAAAAAAAAOOwUeLwSM0sysnPzzUSycgvVyjJV0gvAtO5iSX5qcWLWMXcQfwMqCq4RBObGhebV2pRcWqlkIwHkk6IGFydfRObAhdLQH5JsZAEyKTMvHS4nEJmnkIBUKaJTZWLzak0OTu1REgam6IksBxQnTYXN0hPTmJeCdAaIRmsJkJlm9iUuOC-E8LpDTkulpzE3AKoAhBTIS2_CNWfTolFRak52K1LVEgCyzaxiXExO-VXCPGHgGUhoZGUX9HEpsLFGlyQn58nJI0cUGAhRDhNYGMEALrWsdGPAQAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARA6",
+          "block_position": -1
+        },
+        {
+          "title": "lamp",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Grow+lamp+for+tomatoes&stick=H4sIAAAAAAAAAOOwUWLJScwtMBLJyC9XKMlXSC8C07mJJfmpxYtYxdxBfJAKhbT8IrhEE5saF5tXalFxaqWQjAeSTogYXJ19E5sCF0tAfkmxkATIpMy8dLicQmaeQgFQpolNlYvNqTQ5O7VESBqboiSwHFCdNhc3SE9OYl4J0BohGawmQmWb2JS4ODxSM4ty8vNzhSDeyIBykbwhxwX2vhA-fzolFhWl5mC3LlEhCSzbxCbGxeyUXyHEHwKWhYRGUn5FE5sKF2twQX5-npA0ckCBhRDhNIGNEQAoJda4iwEAAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARA8",
+          "block_position": -1
+        },
+        {
+          "title": "Barrel",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Growing+tomatoes+in+a+barrel&stick=H4sIAAAAAAAAAG1QuwrCMBRFrJcSByGICBUJoi5uzoLQxeIk6A-kErXY9pY0oq75Ar_BLzVNtXbolNzzuI_jribgcylFvOxf8M4UsrO0b8IVivzdGW1MHaXnCmJRyjgLrUnDnMBWyFw86Sio-Uus8qw1MOLsUOV02NQvM4yGGQH_drwKRb0mUWg5o1uQbuGJearMGNq44Y_VMCFuICIZIyZ0UEjZ5VtWBg1j4sQ8yb6C4stOKGsCc2eZU_O4fyAD0vbxQXsHy5ZphPjQMCWdfYaYUq8elIX-Ob2g9QFcogPMkwEAAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARA-",
+          "block_position": -1
+        },
+        {
+          "title": "Box",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Tomato+grow+box&stick=H4sIAAAAAAAAAOOwUWJ2yq8wEsnIL1coyVdILwLTuYkl-anFi1j5Q8BMiHBSfkUTmxoXm1dqUXFqpZCMB5IWiBhcp30TmwIXS0B-SbGQhDtQPjMvHS6nkJmnUACUaWJT5WJzKk3OTi0RksamKAksB1SnzcUN0pOTmFcCtEZIBquJUNkmNiUuDo_UzKKc_PxcITGQUoUMKBeuoYlNjoslJzG3AKoAxFRIyy9CUgD0p1NiUVFqDnbrEhWSwLJNbGJcoAAUwgwpFS7W4IL8_DwhaeSAAgshwmkCGyMAQDDTHoMBAAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARBA",
+          "block_position": -1
+        },
+        {
+          "title": "Spoon",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=How+to+grow+Spoon+tomatoes%3F&stick=H4sIAAAAAAAAAH2QsQrCMBCGEfUocRCCiNAiQdTFzVkQulicBH2BVKIW215JI-qaJ_AZfFLTtJQOxSnJfd_dkd_ZzPrHDDFdj274ZArZVdoz4QpF_u27QaNszRpuNSwJ7IXMxZt6Ta-sNUVGegdUOZ3sDI_Sa81YlLLMEA0LAv7jfBeKum1SaJnxVmRQ9MQ8VWYN9VonVlTDjDiBiGSMmNBxobJb9awbNExJL-ZJVgnFlV1QNgTzT59LKeL2dZyFlmoYk66PLzo8WVqmEeJLw5yUOdN_gX6g8wNEOH91kQEAAA&sa=X&ved=2ahUKEwji-M6YiPrzAhVsSPEDHQCED8MQiboGegQIARBC",
+          "block_position": -1
+        }
+      ]
+    },
+    "answer_box": {
+      "answer_box_type": 19,
+      "answers": [
+        {
+          "source": {
+            "link": "https://towardsdatascience.com/top-10-databases-to-use-in-2021-d7e6a85402ba",
+            "title": "Top 10 Databases to Use in 2021. MySQL, Oracle, PostgreSQL",
+            "displayed_link": "https://towardsdatascience.com › top-10-databases-to-use-i..."
+          },
+          "answer": "Top 10 Databases to Use in 2021. MySQL, Oracle, PostgreSQL"
+        }
+      ],
+      "block_position": 1
+    },
+    "scholarly_articles": [
+      {
+        "title": "analysis of open source business intelligence platforms",
+        "link": "https://scholar.google.co.uk/scholar_url?url=https://www.researchgate.net/profile/Joaquim-Lapa/publication/266659935_A_comparative_analysis_of_open_source_business_intelligence_platforms/links/5aa012c4a6fdcc22e2cc69cb/A-comparative-analysis-of-open-source-business-intelligence-platforms.pdf&hl=en&sa=X&ei=gd6-Yum9DomdywT6yITwBA&scisig=AAGBfm0FdwtbQEE8vdY4x038yq1i5eeHUw&oi=scholarr",
+        "cited_by_count": 41,
+        "author": "Lapa",
+        "block_position": 2
+      },
+      {
+        "title": "Magic quadrant for business intelligence platforms",
+        "link": "https://scholar.google.co.uk/scholar_url?url=http://in2015.in1.com.br/sites/default/files/magic_quadrant_for_business__210036.pdf&hl=en&sa=X&ei=gd6-Yum9DomdywT6yITwBA&scisig=AAGBfm2dEdCo_HhqJW3oK7u02gXx7OPn2g&oi=scholarr",
+        "cited_by_count": 97,
+        "author": "Sallam",
+        "block_position": 2
+      },
+      {
+        "title": "for analytics and business intelligence platforms",
+        "link": "https://scholar.google.co.uk/scholar_url?url=https://cedar.princeton.edu/sites/cedar/files/media/gartner_bi_comparison_2018.pdf&hl=en&sa=X&ei=gd6-Yum9DomdywT6yITwBA&scisig=AAGBfm35ADcK80gx2oJ_kQd93Gz8k6TMag&oi=scholarr",
+        "cited_by_count": 64,
+        "author": "Howson",
+        "block_position": 2
+      }
+    ],
+    "local_map": {
+      "link": "https://www.google.com/search?gl=us&hl=en&q=pizza&npsic=0&rflfq=1&rldoc=1&rllag=37246108,-95636668,6702&tbm=lcl&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQtgN6BAggEAc",
+      "gps_coordinates": {
+        "latitude": 37.246108,
+        "longitude": -95.636668,
+        "altitude": 6702
+      },
+      "image": "data:image/jpeg;base64,<Base64 image data>"
+    },
+    "local_results": [
+      {
+        "position": 1,
+        "title": "Big Cheese Pizza",
+        "gps_coordinates": {
+          "latitude": 37.223034,
+          "longitude": -95.70634
+        },
+        "address": "Independence, KS",
+        "data_cid": "16079127472634248849",
+        "extensions": [
+          "4.3(360)",
+          "$$",
+          "Pizza",
+          "Independence, KS",
+          "Dine-in·Curbside pickup"
+        ],
+        "rating": 4.3,
+        "reviews": 360,
+        "price": "$$",
+        "price_parsed": 2,
+        "price_description": "Moderately expensive",
+        "block_position": 1
+      },
+      {
+        "position": 2,
+        "title": "Pizza Hut",
+        "gps_coordinates": {
+          "latitude": 37.242863,
+          "longitude": -95.70667
+        },
+        "address": "Independence, KS",
+        "data_cid": "1100080596967423812",
+        "extensions": [
+          "3.8(350)",
+          "$",
+          "Pizza",
+          "Independence, KS",
+          "Dine-in·Takeout·No-contact delivery"
+        ],
+        "rating": 3.8,
+        "reviews": 350,
+        "price": "$",
+        "price_parsed": 1,
+        "price_description": "Inexpensive",
+        "block_position": 1
+      },
+      {
+        "position": 3,
+        "title": "Simple Simon's Pizza - Cherryvale, KS",
+        "gps_coordinates": {
+          "latitude": 37.269184,
+          "longitude": -95.56666
+        },
+        "phone": "In Jump Start",
+        "data_cid": "14355164776889591703",
+        "extensions": [
+          "4.3(29)",
+          "$",
+          "Pizza",
+          "Cherryvale, KS",
+          "In Jump Start",
+          "Dine-in·Takeout"
+        ],
+        "rating": 4.3,
+        "reviews": 29,
+        "price": "$",
+        "price_parsed": 1,
+        "price_description": "Inexpensive",
+        "block_position": 1
+      }
+    ],
+    "top_stories": [
+      {
+        "link": "https://www.eonline.com/news/1305311/rami-malek-may-have-pulled-the-boldest-move-in-pizza-delivery-history",
+        "title": "Rami Malek May Have Pulled the Boldest Move In Pizza Delivery History",
+        "visible_initially": true,
+        "source": "E! Online",
+        "date": "1 day ago",
+        "date_utc": "2021-10-09T11:00:00.000Z",
+        "thumbnail": "data:image/jpeg;base64,<Base64 image data>",
+        "block_position": 2
+      },
+      {
+        "link": "https://abc13.com/dominos-pizza-delivery-driver-shot-shooting-clover-street-southeast-houston-nita/11098492/",
+        "title": "Domino's pizza delivery driver shot multiple times and SUV stolen in southeast Houston, police say",
+        "visible_initially": true,
+        "source": "ABC13",
+        "date": "2 days ago",
+        "date_utc": "2021-10-08T11:00:00.000Z",
+        "thumbnail": "data:image/jpeg;base64,<Base64 image data>",
+        "block_position": 2
+      },
+      {
+        "link": "https://news4sanantonio.com/news/local/pizza-delivery-man-critically-wounded-in-shooting",
+        "title": "Pizza delivery man critically wounded in shooting",
+        "visible_initially": true,
+        "source": "WOAI",
+        "date": "2 days ago",
+        "date_utc": "2021-10-08T11:00:00.000Z",
+        "thumbnail": "data:image/jpeg;base64,<Base64 image data>",
+        "block_position": 2
+      }
+    ],
+    "knowledge_graph": {
+      "title": "Pizza",
+      "type": "Dish",
+      "hours": [
+        {
+          "name": "Monday",
+          "value": "7 AM–4 PM"
+        },
+        {
+          "name": "Tuesday",
+          "value": "7 AM–4 PM"
+        },
+        {
+          "name": "Wednesday",
+          "value": "7 AM–4 PM"
+        },
+        {
+          "name": "Thursday",
+          "value": "7 AM–4 PM"
+        },
+        {
+          "name": "Friday",
+          "value": "7 AM–4 PM"
+        },
+        {
+          "name": "Saturday",
+          "value": "8 AM–4 PM"
+        },
+        {
+          "name": "Sunday",
+          "value": "8 AM–4 PM"
+        }
+      ],
+      "opening_hours": {
+        "per_day": [
+          {
+            "name": "Monday",
+            "value": "7 AM–4 PM",
+            "day_number": 1,
+            "parsed": [
+              {
+                "open": "7 AM",
+                "close": "4 PM"
+              }
+            ]
+          },
+          {
+            "name": "Tuesday",
+            "value": "7 AM–4 PM",
+            "day_number": 2,
+            "parsed": [
+              {
+                "open": "7 AM",
+                "close": "4 PM"
+              }
+            ]
+          },
+          {
+            "name": "Wednesday",
+            "value": "7 AM–4 PM",
+            "day_number": 3,
+            "parsed": [
+              {
+                "open": "7 AM",
+                "close": "4 PM"
+              }
+            ]
+          },
+          {
+            "name": "Thursday",
+            "value": "7 AM–4 PM",
+            "day_number": 4,
+            "parsed": [
+              {
+                "open": "7 AM",
+                "close": "4 PM"
+              }
+            ]
+          },
+          {
+            "name": "Friday",
+            "value": "7 AM–4 PM",
+            "day_number": 5,
+            "parsed": [
+              {
+                "open": "7 AM",
+                "close": "4 PM"
+              }
+            ]
+          },
+          {
+            "name": "Saturday",
+            "value": "8 AM–4 PM",
+            "day_number": 6,
+            "parsed": [
+              {
+                "open": "8 AM",
+                "close": "4 PM"
+              }
+            ]
+          },
+          {
+            "name": "Sunday",
+            "value": "8 AM–4 PM",
+            "day_number": 0,
+            "parsed": [
+              {
+                "open": "8 AM",
+                "close": "4 PM"
+              }
+            ]
+          }
+        ]
+      },
+      "images": [
+        "data:image/jpeg;base64,<Base64 image data>",
+        "data:image/jpeg;base64,<Base64 image data>"
+      ],
+      "source": {
+        "name": "Wikipedia",
+        "link": "https://en.wikipedia.org/wiki/Pizza"
+      },
+      "description": "Pizza is an Italian dish consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta.",
+      "profiles": [
+        {
+          "name": "Twitter",
+          "link": "https://twitter.com/amazon"
+        },
+        {
+          "name": "Facebook",
+          "link": "https://www.facebook.com/Amazon"
+        },
+        {
+          "name": "Instagram",
+          "link": "https://www.instagram.com/amazon_espana/"
+        },
+        {
+          "name": "Pinterest",
+          "link": "https://www.pinterest.com/amazon/"
+        },
+        {
+          "name": "LinkedIn",
+          "link": "https://www.linkedin.com/company/amazon"
+        }
+      ],
+      "people_also_search_for": [
+        {
+          "name": "Walmart",
+          "link": "/search?gl=us&hl=en&q=Walmart&stick=H4sIAAAAAAAAAONgFuLQz9U3yE3PTlcCsyxMDMu0BIMzU1LLEyuL_VIrSoJLUguKF7Gyhyfm5CYWlexgZQQA2MZr7jYAAAA&sa=X&ved=2ahUKEwif3bvLtvzzAhX0SfEDHWuRDFwQxA16BAhQEAU"
+        },
+        {
+          "name": "Flipkart",
+          "link": "/search?gl=us&hl=en&q=Flipkart&stick=H4sIAAAAAAAAAONgFuLQz9U3yE3PTlfiArGSi1KqKgq0BIMzU1LLEyuL_VIrSoJLUguKF7FyuOVkFmQnFpXsYGUEANm64tw5AAAA&sa=X&ved=2ahUKEwif3bvLtvzzAhX0SfEDHWuRDFwQxA16BAhQEAc"
+        },
+        {
+          "name": "Alibaba Group",
+          "link": "/search?gl=us&hl=en&q=Alibaba+Group&stick=H4sIAAAAAAAAAONgFuLQz9U3yE3PTlfiArHMi82SS3K0BIMzU1LLEyuL_VIrSoJLUguKF7HyOuZkJiUmJSq4F-WXFuxgZQQAhgrtzj4AAAA&sa=X&ved=2ahUKEwif3bvLtvzzAhX0SfEDHWuRDFwQxA16BAhQEAk"
+        },
+        {
+          "name": "AliExpress",
+          "link": "/search?gl=us&hl=en&q=AliExpress&stick=H4sIAAAAAAAAAONgFuLQz9U3yE3PTlfi0U_XNzQqTMowLDY10RIMzkxJLU-sLPZLrSgJLkktKF7EyuWYk-laUVCUWly8g5URAIEn1Hc9AAAA&sa=X&ved=2ahUKEwif3bvLtvzzAhX0SfEDHWuRDFwQxA16BAhQEAs"
+        },
+        {
+          "name": "Target Corporation",
+          "link": "/search?gl=us&hl=en&q=Target&stick=H4sIAAAAAAAAAONgFuLQz9U3yE3PTlfiBLEMk4wts7QEgzNTUssTK4v9UitKgktSC4oXsbKFJBalp5bsYGUEAANjCLk2AAAA&sa=X&ved=2ahUKEwif3bvLtvzzAhX0SfEDHWuRDFwQxA16BAhQEA0"
+        }
+      ],
+      "known_attributes": [
+        {
+          "attribute": "kc:/food/food:energy",
+          "value": "USDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDAUSDA",
+          "name": "USDA",
+          "link": "https://fdc.nal.usda.gov/"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Pizza games",
+          "value": "Pizza games",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+games&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlOCs7REspOt9JPzc3Pz86xS8svzyhOLUopXMYoDxXJyUpNLMvPz9MsyU1Lz49MTc1OLF7FyB2RWVSUqgHk7WBkBkU79Q1cAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQMSgAegQIQxAB"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "View 10+ more",
+          "value": "View 10+ more",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+games&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlOCs7REspOt9JPzc3Pz86xS8svzyhOLUopXMYoDxXJyUpNLMvPz9MsyU1Lz49MTc1OLF7FyB2RWVSUqgHk7WBkBkU79Q1cAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQzTooAXoECEMQAg"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Good Pizza, Great Pi...",
+          "value": "Good Pizza, Great Pi...",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Good+Pizza,+Great+Pizza&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPi1U_XNzRMNjMvS69KydISyU620k_Oz83Nz7NKyS_PK08sSilexSgOFMvJSU0uyczP0y_LTEnNj09PzE0tXsQq7p6fn6IQkFlVlaij4F6UmlgC4exgZQQA48mhjGgAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhDEAU"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Pizza Maker ‑ Cooking...",
+          "value": "Pizza Maker ‑ Cooking...",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+Maker+-+Cooking+Game&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPi1U_XNzRMNqq0SCpLt9ASyU620k_Oz83Nz7NKyS_PK08sSilexSgOFMvJSU0uyczP0y_LTEnNj09PzE0tXsQqFZBZVZWo4JuYnVqkoKvgnJ-fnZmXruAOlN3ByggAUPSmCmsAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhDEAc"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Masha and the Bear Piz...",
+          "value": "Masha and the Bear Piz...",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Masha+and+the+Bear+Pizza+Maker&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPi1U_XNzTMKK4qKLeoKNESyU620k_Oz83Nz7NKyS_PK08sSilexSgOFMvJSU0uyczP0y_LTEnNj09PzE0tXsQq55tYnJGokJiXolCSkarglJpYpBCQWVWVqOCbmJ1atIOVEQCf1aY3bwAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhDEAk"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Pizza Tycoon",
+          "value": "Pizza Tycoon",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+Tycoon&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPiBLFMC43KUrREspOt9JPzc3Pz86xS8svzyhOLUopXMYoDxXJyUpNLMvPz9MsyU1Lz49MTc1OLF7HyBGRWVSUqhFQm5-fn7WBlBADjtebSWQAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhDEAs"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Panic Restaurant",
+          "value": "Panic Restaurant",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Panic+Restaurant&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPiBLEsi7OKkrVEspOt9JPzc3Pz86xS8svzyhOLUopXMYoDxXJyUpNLMvPz9MsyU1Lz49MTc1OLF7EKBCTmZSYrBKUWlySWFiXmlexgZQQADS34cl0AAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhDEA0"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Pizza Movies",
+          "value": "Pizza Movies",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+Movies&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlOCs7REspOt9JPzc3Pz86xS8svzyhOLUopXMQoCxXJyUpNLMvPz9NMyc3KLF7HyBGRWVSUq-OaXZaYW72BlBACKR_rHUgAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQMSgAegQIRBAB"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "View 40+ more",
+          "value": "View 40+ more",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+Movies&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlOCs7REspOt9JPzc3Pz86xS8svzyhOLUopXMQoCxXJyUpNLMvPz9NMyc3KLF7HyBGRWVSUq-OaXZaYW72BlBACKR_rHUgAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQzTooAXoECEQQAg"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Pizza",
+          "value": "Pizza",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+2012&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPiArHyTMxNUwq1RLKTrfST83Nz8_OsUvLL88oTi1KKVzEKAsVyclKTSzLz8_TTMnNyixexcgVkVlUlKhgZGBrtYGUEAGodwZlSAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhEEAU"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Untitled Pizza Movie",
+          "value": "Untitled Pizza Movie",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Untitled+Pizza+Movie&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPi1U_XNzRMKyqsqLIwSNcSyU620k_Oz83Nz7NKyS_PK08sSilexSgIFMvJSU0uyczP00_LzMktXsQqEppXklmSk5qiEJBZVZWo4Jtflpm6g5URALlfcQRfAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhEEAc"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Pizza, A Love Story",
+          "value": "Pizza, A Love Story",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza,+A+Love+Story&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPi1U_XNzRMSy4uNMvIM9USyU620k_Oz83Nz7NKyS_PK08sSilexSgIFMvJSU0uyczP00_LzMktXsQqHJBZVZWoo-Co4JNflqoQXJJfVLmDlREAN2oR4F4AAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhEEAk"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Little Italy",
+          "value": "Little Italy",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Little+Italy+2018&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPi1U_XNzRMzzBOy8ozzdMSyU620k_Oz83Nz7NKyS_PK08sSilexSgIFMvJSU0uyczP00_LzMktXsQq6JNZUpKTquBZkphTqWBkYGixg5URAJXy2ThcAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhEEAs"
+        },
+        {
+          "attribute": "kc:/common:downwards",
+          "name": "Deadpool",
+          "value": "Deadpool",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=Deadpool&stick=H4sIAAAAAAAAAONgFuLQz9U3MDMzLlPiArOMqvJMkrREspOt9JPzc3Pz86xS8svzyhOLUopXMQoCxXJyUpNLMvPz9NMyc3KLF7FyuKQmphTk5-fsYGUEAMs3H4RQAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQxA16BAhEEA0"
+        },
+        {
+          "attribute": "hw:/collection/dishes:origin",
+          "value": "Italy",
+          "name": "Origin",
+          "link": "https://www.google.com/search?gl=us&hl=en&q=pizza+origin&stick=H4sIAAAAAAAAAOPgE-LQz9U3MDMzLtOSySi30k_Oz8lJTS7JzM_TT8kszkgttsovykzPzFvEylOQWVWVqADhAgAjO0XtOQAAAA&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ6BMoAHoECEUQAg"
+        }
+      ],
+      "block_position": 3
+    },
+    "discussions_and_forums": [
+      {
+        "discussion_title": "Walt Disney World Announces Changes for 2025 + A New Perk - DISboards.com",
+        "link": "https://www.disboards.com/threads/walt-disney-world-announces-changes-for-2025-a-new-perk.3940959/",
+        "source": {
+          "source_title": "DISboards.com",
+          "domain": "www.disboards.com",
+          "time": "1mo ago"
+        },
+        "block_position": 7
+      },
+      {
+        "discussion_title": "Are we stupid to plan a last minute Disney trip 2 weeks out? : r/disneyparks - Reddit",
+        "link": "https://www.reddit.com/r/disneyparks/comments/1546oia/are_we_stupid_to_plan_a_last_minute_disney_trip_2/",
+        "source": {
+          "source_title": "Reddit",
+          "domain": "www.reddit.com",
+          "source_community": "r/disneyparks",
+          "comments_count": "20+ comments",
+          "time": "8mo ago"
+        },
+        "block_position": 7
+      },
+      {
+        "discussion_title": "I'm overwhelmed trying to plan a trip to Disney world. Please help me. - Reddit",
+        "link": "https://www.reddit.com/r/DisneyPlanning/comments/xbj1zs/im_overwhelmed_trying_to_plan_a_trip_to_disney/",
+        "source": {
+          "source_title": "Reddit",
+          "domain": "www.reddit.com",
+          "source_community": "r/DisneyPlanning",
+          "comments_count": "30+ comments",
+          "time": "1y ago"
+        },
+        "block_position": 7
+      }
+    ],
+    "questions_and_answers": [
+      {
+        "question": "Predict the products of electrolysis in each of the following-i- An aqueous solution of AgNO-3- with silver electrodes-ii- An aqueous solution of AgNO-3- with platinum electrodes-iii- A dilute solution of H-2-SO-4- with platinum electrodes-iv- An aqueous solution of CuCl-2- with platinum electrodes",
+        "answer": "-i- An aqueous solution of AgNO3 with silver electrodes-At cathode- Silver ions have lower discharge potential than hydrogen ions- Hence- silver ions will be deposited in preference to hydrogen ions-At anode- Silver anode will dissolve to form silver ions in the solution-Ag-x2192-Ag-e-x2212-ii- An aqueous solution of AgNO3 with platinum electrodes-At cathode- Silver ions have lower discharge potential than hydrogen ions- Hence- silver ions will be deposited in preference to hydrogen ions-At anode- Hydroxide ions having lower discharge potential will be discharged in preference to nitrate ions- Hydroxide ions will decompose to give oxygen-4OH-x2212-aq-x2192-2H2O-l-O2-g-4e-x2212-iii- A dilute solution of H2SO4 with platinum electrodes-At cathode- 2H-2e-x2212-x2192-H2-g-At anode- Hydroxide ions having lower discharge potential will be discharged in preference to sulphate ions- Hydroxide ions will decompose to give oxygen-4OH-x2212-aq-x2192-2H2O-l-O2-g-4e-x2212-iv- An aqueous solution of C…",
+        "votes": 79,
+        "block_position": 2,
+        "source": {
+          "link": "https://www.toppr.com/ask/question/predict-the-products-of-electrolysis-in-each-of-the-followingi-an-aqueous-solution-of-agno3/",
+          "domain": "www.toppr.com",
+          "title": "Toppr"
+        }
+      },
+      {
+        "question": "Predict the products of electrolysis in each of the following-i An aqueous solution of AgNO 3 with silver electrodes-ii An aqueous solution of AgNO 3 with platinum electrodes-iii A dilute solution of H 2 SO 4 with platinum electrodes-iv An aqueous solution of CuCl 2 with platinum electrodes-",
+        "answer": "(i) At cathode:\nThe\nfollowing reduction reactions compete to take place at the cathode.\n\nThe\nreaction with a higher value of\n\ntakes place at the cathode. Ther ...",
+        "votes": 40,
+        "block_position": 2,
+        "source": {
+          "link": "https://byjus.com/question-answer/predict-the-products-of-electrolysis-in-each-of-the-following-i-an-aqueous-solution-of-5/",
+          "domain": "byjus.com",
+          "title": "BYJU'S"
+        }
+      },
+      {
+        "question": "Predict the products of electrolysis in each of the following:(i) An aqueous solution of $AgN{{O}_{3}}with silver electrodes.(ii) An aqueous solution of $AgN{{O}_{3}}$ with platinum electrodes.(iii) A dilute solution of ${{H}_{2}}S{{O}_{4}}$ with platinum electrodes.(iv) An aqueous solution of $CuC{{l}_{2}}$ with platinum electrodes.",
+        "answer": "Hint: Write the ions that will go to the electrodes i.e. cathode and anode. We have to consider the electrode potential for the respective half reactions. Remember to write the oxidation and reduction of water molecules along with the ions of the salt. Complete step-by-step answer:As suggested in the hint we will write the reactions taking place at anode and cathode for each electrolysis process and then predict the possible products of electrolysis.(i) An aqueous solution of $AgN{{O}_{3}}$ with silver electrodes.Electrolyte : $AgN{{O}_{3}}$Cathode (Silver) :$\\text{A}{{\\text{g}}^{+}}\\text{ + }{{\\text{e}}^{-}}\\text{ }\\to \\text{ Ag}$This is because silver ions have lower discharge potential than hydrogen ions.Anode (Silver):$\\text{Ag }\\to \\text{ A}{{\\text{g}}^{+}}\\text{ + }{{\\text{e}}^{-}}$Product : Ag(ii) An aqueous solution of $AgN{{O}_{3}}$ with platinum electrodes.Electrolyte: $AgN{{O}_{3}}$Cathode(inert) :$\\text{A}{{\\text{g}}^{+}}\\text{ + }{{\\text{e}}^{-}}\\text{ }\\to \\text{ Ag}$This…",
+        "votes": 0,
+        "block_position": 2,
+        "source": {
+          "link": "https://www.vedantu.com/question-answer/predict-the-products-of-electrolysis-in-each-of-class-12-chemistry-cbse-5f7ff0390c3e8778141574c0",
+          "domain": "www.vedantu.com",
+          "title": "Vedantu"
+        }
+      }
+    ],
+    "related_searches": [
+      {
+        "query": "pizza near me",
+        "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+near+me&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ1QJ6BAg5EAE",
+        "type": "standard"
+      },
+      {
+        "query": "pizza recipe",
+        "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+recipe&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ1QJ6BAg6EAE",
+        "type": "standard"
+      },
+      {
+        "query": "pizza delivery",
+        "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+delivery&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ1QJ6BAg7EAE",
+        "type": "standard"
+      },
+      {
+        "query": "pizza history",
+        "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+history&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ1QJ6BAg8EAE",
+        "type": "standard"
+      },
+      {
+        "query": "pizza delivery near me",
+        "link": "https://www.google.com/search?gl=us&hl=en&q=Pizza+delivery+near+me&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ1QJ6BAg9EAE",
+        "type": "standard"
+      }
+    ],
+    "related_questions": [
+      {
+        "question": "What is the best pizza ever?",
+        "answer": "The World's Best Pizza: 2020. L'Antica Pizzeria da Michele, Naples.The Good Son, . Toronto.Bæst, Copenhagen.Pizza Fabbrica, Singapore.PI, Dublin.Animaletto Pizza Bar, Bucharest.Pizza e Mozzarella Bar, Adelaide.",
+        "source": {
+          "link": "https://bigseventravel.com/worlds-best-pizza-2019/",
+          "displayed_link": "https://bigseventravel.com › worlds-best-pizza-2019",
+          "title": "The 50 Best Pizzas in the World - Big 7 Travel"
+        },
+        "search": {
+          "link": "https://www.google.com/search?q=What+is+the+best+pizza+ever?&gl=us&hl=en&tbm=isch&source=iu&ictx=1&fir=J0VdqqUA0M8OIM%252CTu4ojd0dXpDk7M%252C_&vet=1&usg=AI4_-kTkb1sNKxI1VjAE7nZOqaPzeEMn7w&sa=X&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ9QF6BAgTEAE#imgrc=J0VdqqUA0M8OIM"
+        },
+        "block_position": 2
+      },
+      {
+        "question": "What is Pizza Hut $10 deal?",
+        "answer": "Pizza Hut is introducing the $10 Tastemaker, where you can choose any three toppings on a large pizza for just $10 – and get it any way you want it, via contactless delivery, carryout or curbside pickup.",
+        "source": {
+          "link": "https://blog.pizzahut.com/pizza-hut-unveils-10-tastemaker-with-680-topping-combinations/",
+          "displayed_link": "https://blog.pizzahut.com › pizza-hut-unveils-10-tastemak...",
+          "title": "Pizza Hut Unveils $10 Tastemaker With 680 Topping Combinations"
+        },
+        "block_position": 2
+      },
+      {
+        "question": "Why is Papa John's so expensive?",
+        "answer": "The convenience of Papa John's is a major reason it is so expensive. When people can be lazy and don't feel like preparing the food, they are willing to pay more for it. ... Restaurants and fast-food chains can get away with charging higher prices because of the laziness of people.",
+        "source": {
+          "link": "https://www.thecoldwire.com/why-is-papa-johns-so-expensive/",
+          "displayed_link": "https://www.thecoldwire.com › why-is-papa-johns-so-exp...",
+          "title": "Why Is Papa John's So Expensive? (Top 8 Reasons) - The Cold Wire"
+        },
+        "block_position": 2
+      },
+      {
+        "question": "What is the real name of pizza?",
+        "answer": "A precursor of pizza was probably the focaccia, a flat bread known to the Romans as panis focacius, to which toppings were then added. Modern pizza evolved from similar flatbread dishes in Naples, Italy, in the 18th or early 19th century.",
+        "source": {
+          "link": "https://en.wikipedia.org/wiki/History_of_pizza",
+          "displayed_link": "https://en.wikipedia.org › wiki › History_of_pizza",
+          "title": "History of pizza - Wikipedia"
+        },
+        "block_position": 2
+      }
+    ],
+    "inline_videos": [
+      {
+        "position": 1,
+        "title": "How To Grow Tomatoes At Home (SEED TO HARVEST)",
+        "link": "https://www.youtube.com/watch?v=eySTo2GgvoY",
+        "length": "13.52",
+        "source": "YouTube - Urban Gardening",
+        "date": "Sep 13, 2019",
+        "date_utc": "2019-09-13T11:00:00.000Z",
+        "key_moments": [
+          {
+            "time": "00:41",
+            "text": "Take some fresh Tomatoes (Prefer Heirloom varieties) Cut them into slices",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=41"
+          },
+          {
+            "time": "01:47",
+            "text": "Seeds can be sown from September to October",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=107"
+          },
+          {
+            "time": "03:18",
+            "text": "With a help of a gardening tool take the plants out from the seedling pot. Make sure not to disturb the roots during the transplanting process",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=198"
+          },
+          {
+            "time": "03:50",
+            "text": "RIGHT WAY TO PLANT: Tomatoes must be planted deeply. Deep planting encourages healthy and strong root system. At the time of planting, cover bottom 2/3 part of the plant with potting soil.",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=230"
+          },
+          {
+            "time": "05:04",
+            "text": "LOCATION:Your tomato plants need between 4-6 hours of total sun per day in order to grow and eventually produce fruit.",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=304"
+          },
+          {
+            "time": "06:15",
+            "text": "POLLINATION: While tomato flowers are typically pollinated y wind, and occasionally by bees, the lack of air movement or low insect numbers can slow down the natural pollination process",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=375"
+          },
+          {
+            "time": "07:12",
+            "text": "FERTILIZER: You can fertilize the plants with fishmeal, chicken manure,vermi compost or any other organic fertilizer.",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=432"
+          },
+          {
+            "time": "07:50",
+            "text": "Too much water and your plant's roots will rot. Too little water and your plants will get weak.",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=470"
+          },
+          {
+            "time": "08:59",
+            "text": "As the tomatoes grow bigger and heavier provide extra support to the stems",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=539"
+          },
+          {
+            "time": "10:55",
+            "text": "Ripe tomatoes can be plucked by gently pulling at the stem with your fingers. Or, use a sharp scissor to snip them off their branches",
+            "link": "https://www.youtube.com/watch?v=eySTo2GgvoY&t=655"
+          }
+        ],
+        "block_position": 4
+      },
+      {
+        "position": 2,
+        "title": "Grow Lots of Tomatoes... Not Leaves // Complete Growing Guide",
+        "link": "https://www.youtube.com/watch?v=9w-7RoH_uic",
+        "length": "21.51",
+        "source": "YouTube - Next Level Gardening",
+        "date": "May 27, 2019",
+        "date_utc": "2019-05-27T11:00:00.000Z",
+        "block_position": 4
+      },
+      {
+        "position": 3,
+        "title": "How To Grow Tomatoes - A Handy Guide For Best Results",
+        "link": "https://www.youtube.com/watch?v=eleQ-alOCm4",
+        "length": "8.58",
+        "source": "YouTube - Quickcrop",
+        "date": "Feb 7, 2013",
+        "date_utc": "2013-02-07T12:00:00.000Z",
+        "block_position": 4
+      }
+    ],
+    "inline_images": [
+      {
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "link": "https://www.sciencenewsforstudents.org/article/lets-learn-about-trees",
+        "title": "Image result for trees",
+        "block_position": 11
+      },
+      {
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "link": "https://www.thespruce.com/the-difference-between-trees-and-shrubs-3269804",
+        "title": "Image result for trees",
+        "block_position": 11
+      },
+      {
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "link": "https://www.gardeningknowhow.com/ornamental/trees/tgen/trees-that-please-the-landscape.htm",
+        "title": "Image result for trees",
+        "block_position": 11
+      },
+      {
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "link": "https://en.wikipedia.org/wiki/Tree",
+        "title": "Image result for trees",
+        "block_position": 11
+      },
+      {
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "link": "https://www.bbc.com/future/article/20190911-what-would-happen-if-all-the-worlds-trees-disappeared",
+        "title": "Image result for trees",
+        "block_position": 11
+      }
+    ],
+    "inline_shopping": [
+      {
+        "link": "https://www.fast-growing-trees.com/products/thuja-green-giant?variant=14923075780660&utm_source=google_shopping&utm_medium=organic",
+        "title": "10-Pack (1-2 ft.), 1-2 ft- Thuja Green Giant Arborvitae, 1-2 ft- The Fastest Growing Privacy Evergreen Tree | Tree Delivery | Tree Delivery",
+        "price": "$169.95",
+        "merchant": "FastGrowingTrees.com",
+        "position": 1,
+        "block_position": "top",
+        "visible_initially": true,
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 169.95
+        },
+        "rating": 4.4,
+        "feed_name": "10-Pack (1-2 ft.), 1-2 ft- Thuja Green Giant Arborvitae, 1-2 ft- The Fastest Growing Privacy Evergreen Tree | Tree Delivery | Tree Delivery",
+        "feed_link": "https://www.fast-growing-trees.com/products/thuja-green-giant?variant=14923075780660&utm_source=google_shopping&utm_medium=organic"
+      },
+      {
+        "link": "https://www.balsamhill.com/p/bh-fraser-fir-flip-tree?sku=2808951&module=1",
+        "title": "7.5' Fraser Fir Flip Artificial Christmas Tree by Balsam Hill",
+        "price": "$1,499.00",
+        "merchant": "Balsam Hill",
+        "position": 2,
+        "block_position": "top",
+        "visible_initially": true,
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 1499
+        },
+        "rating": 4.6,
+        "feed_name": "7.5' Fraser Fir Flip Artificial Christmas Tree by Balsam Hill",
+        "feed_link": "https://www.balsamhill.com/p/bh-fraser-fir-flip-tree?sku=2808951&module=1"
+      },
+      {
+        "link": "https://www.hammacher.com/product/northern-lights-christmas-tree-4-1-2",
+        "title": "Northern Lights Christmas Tree (4 1/2')",
+        "price": "$349.95",
+        "merchant": "Hammacher Schlemmer",
+        "position": 3,
+        "block_position": "top",
+        "visible_initially": true,
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "price_parsed": {
+          "symbol": "$",
+          "value": 349.95
+        },
+        "rating": 4.4,
+        "feed_name": "Northern Lights Christmas Tree (4 1/2')",
+        "feed_link": "https://www.hammacher.com/product/northern-lights-christmas-tree-4-1-2"
+      }
+    ],
+    "explore_brands": [
+      {
+        "title": "Mamaearth",
+        "description": "One such example can be Mamaearth 10% Vitamin C Essence Serum. It is \nnatural and comes with the innate goodness of Vitamin C, Niacinamide, and \nGotu Kola Oil.",
+        "link": "https://mamaearth.in/product/10-vitamin-c-face-serum-essence-serum-with-vitamin-c-and-gotu-kola-for-skin-illumination-30ml"
+      },
+      {
+        "title": "mCaffeine",
+        "description": "Reduces Dark Spots & Pigmentation. This potent serum is enriched with \nantioxidant-rich trio - 15% Vitamin C, Green Tea & Caffeine, which work \ntogether to reduce ...",
+        "link": "https://www.mcaffeine.com/products/green-tea-15-vitamin-c-face-serum-for-glowing-skin-reduces-dark-spots-30-ml"
+      },
+      {
+        "title": "The Moms Co.",
+        "description": "Vitamin C Serum: Buy natural 10% vitamin C face serum for glowing skin at \nbest price in India from The Moms Co. This vitamin C face serum helps fight \nthe ...",
+        "link": "https://themomsco.com/product/natural-10-vitamin-c-face-serum-30ml.html"
+      },
+      {
+        "title": "The Derma Co.",
+        "description": "The Derma Co 20% Vitamin C Face Serum is an ideal potent formulation \nexample. It is meticulously designed by dermatologists with super-actives \nlike Vitamin C, ...",
+        "link": "https://thedermaco.com/product/20-percent-vitamin-c-serum"
+      },
+      {
+        "title": "Organic Harvest",
+        "description": "Buy organic skin brightening serum enriched with Kakadu Plum, Acai Berry & \nRice Water. This natural vitamin c face serum is the perfect elixir for \nglowing ...",
+        "link": "https://www.organicharvest.in/product/brightening-face-serum-kakadu-plum-acai-berry-rice-water-30ml.html"
+      },
+      {
+        "title": "Plum Goodness",
+        "description": "Experience radiant skin with our 15% Vitamin C Face Serum infused with \nMandarin. Boost your glow, fade dark spots, and combat hyperpigmentation \neffectively.",
+        "link": "https://plumgoodness.com/products/vitamin-c-face-serum"
+      },
+      {
+        "title": "Earth Rhythm",
+        "description": "Earth Rhythm's 10% Vitamin C Face Serum is one of a kind and is built to \nbrighten skin, fight hyperpigmentation and dark spots and give a healthy \nglow. This ...",
+        "link": "https://earthrhythm.com/products/10-vitamin-c-face-serum"
+      },
+      {
+        "title": "Ustraa",
+        "description": "Ustraa Vitamin C Face Serum, a non-sticky, 20% Vitamin C serum that \nbrightens and hydrates your skin! With hyaluronic acid, this serum will \nhelp restore ...",
+        "link": "https://www.ustraa.com/vitamin-c-face-serum-20-30-ml/p"
+      }
+    ],
+    "inline_tweets": [
+      {
+        "link": "https://twitter.com/amazon/status/1455255861358649348",
+        "status_link": "https://twitter.com/amazon/status/1455255861358649348",
+        "title": "Amazon (@amazon)",
+        "date": " · 19 hours ago",
+        "date_utc": "2021-11-01T19:59:54.000Z",
+        "snippet": "Engage full holiday mode. 😎🎁❄️\n\nAs you transition from spooky season to the season of giving & cheer, what are your wishes for the holidays? ",
+        "block_position": 2
+      },
+      {
+        "link": "https://twitter.com/amazon/status/1454918922130579459",
+        "status_link": "https://twitter.com/amazon/status/1454918922130579459",
+        "title": "Amazon (@amazon)",
+        "date": " · 2 days ago",
+        "date_utc": "2021-10-31T12:00:00.000Z",
+        "snippet": "Scout, our delivery robot, decided to (pumpkin) spice up our usual field testing with some trick-or-treating. Happy Halloween! 🍫🎃 ",
+        "block_position": 2
+      },
+      {
+        "link": "https://twitter.com/amazon/status/1454840619998883849",
+        "status_link": "https://twitter.com/amazon/status/1454840619998883849",
+        "title": "Amazon (@amazon)",
+        "date": " · 2 days ago",
+        "date_utc": "2021-10-31T12:00:00.000Z",
+        "snippet": "Let’s get this party startled 😱 #halloween ",
+        "block_position": 2
+      }
+    ],
+    "inline_recipes": [
+      {
+        "title": "Classic Cheesecake Recipe",
+        "link": "https://sallysbakingaddiction.com/classic-cheesecake/",
+        "source": "Sally's Baking Addiction",
+        "ingredients": [
+          "Cream cheese",
+          "lemon curd",
+          "sour cream",
+          "graham cracker crumbs",
+          "lemon juice"
+        ],
+        "rating": 4.9,
+        "reviews": 366,
+        "total_time": "7 hr 45 min",
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "block_position": 1
+      },
+      {
+        "title": "The BEST Cheesecake Recipe",
+        "link": "https://sugarspunrun.com/best-cheesecake-recipe/",
+        "source": "Sugar Spun Run",
+        "ingredients": [
+          "Sour cream",
+          "graham cracker crumbs",
+          "brown sugar",
+          "butter",
+          "vanilla extract"
+        ],
+        "rating": 5,
+        "reviews": 1011,
+        "total_time": "7 hr 35 min",
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "block_position": 1
+      },
+      {
+        "title": "Perfect Cheesecake",
+        "link": "https://www.simplyrecipes.com/recipes/perfect_cheesecake/",
+        "source": "Simply Recipes",
+        "ingredients": [
+          "Cream cheese",
+          "sour cream",
+          "sour cream topping",
+          "graham cracker crumbs",
+          "raspberry sauce"
+        ],
+        "rating": 4.9,
+        "reviews": 495,
+        "total_time": "7 hr",
+        "image": "data:image/jpeg;base64,<Base64 image data>",
+        "block_position": 1
+      }
+    ],
+    "top_products": [
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q60A+(2021)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NCwyqCrJSyquesRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ5OzC0uzUtXCDQzcFTQMDIwMtQEAI1A155iAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegQIJRAH",
+        "title": "Samsung Q60A (2021)",
+        "price": "$590+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "Gangas Amazing",
+            "link": "https://gangasamazing.com/en/samsung-qled-4k-2021-55q60a/#:~:text=Many%20highlight%20how%20easy,exceeds%20mid-range%204K%20televisions.",
+            "title": "▷ Samsung QLED 4K 2021 55Q60A | Opinions, Best Price and Review",
+            "snippet": "Many highlight how easy and intuitive it is to operate their smart tv interface, with image quality that far… "
+          },
+          {
+            "name": "RTINGS.com",
+            "link": "https://www.rtings.com/tv/reviews/best/small-tvs",
+            "title": "The 5 Best Small TVs - Fall 2021: Reviews"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "32″–109″"
+          },
+          {
+            "name": "Weight",
+            "value": "11.7–175 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q90T+(2020)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMyyKMkwsyyxeMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ5OzC0uzUtXCLQ0CFHQMDIwMtAEAOPymTZiAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegQIJRAd",
+        "title": "Samsung Q90T (2020)",
+        "price": "$1,400+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "TechHive",
+            "link": "https://www.techhive.com/article/3546246/samsung-q90t-4k-uhd-tv-review.html#:~:text=The%20rocker%20volume%20and,an%20onboard%20mic%2C%20too.",
+            "title": "Samsung Q90T 4K UHD TV review: Samsung tweaks an already great smart TV",
+            "snippet": "The rocker volume and channel buttons are particularly nice and make it easy to orient your finger without looking… "
+          },
+          {
+            "name": "MakeUseOf",
+            "link": "https://www.makeuseof.com/best-hdmi-2-1-tvs-for-gaming/",
+            "title": "The 7 Best HDMI 2.1 TVs for Gaming"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "55″–85″"
+          },
+          {
+            "name": "Weight",
+            "value": "44.3–111.1 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Neo+QN900A+(2021)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMyzMCoyzKrKeMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixilQxOzC0uzUtX8EvNVwj0szQwcFTQMDIwMtQEAGT1ecRoAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegQIJRAz",
+        "title": "Samsung Neo QN900A (2021)",
+        "price": "$3,200+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "Stuff.co.nz",
+            "link": "https://www.stuff.co.nz/technology/reviewsfire/300315449/samsung-qn900a-neo-qled-8k-tv-review#:~:text=It%20boasts%20a%20fantastic,upscale%20content%20into%208K.",
+            "title": "Samsung QN900A Neo QLED 8K TV review",
+            "snippet": "It boasts a fantastic design, a sharp and clear display, rich colours, inky blacks, and it even uses AI technology… "
+          },
+          {
+            "name": "RTINGS.com",
+            "link": "https://www.rtings.com/tv/reviews/best/by-type/qled",
+            "title": "The 5 Best QLED TVs - Fall 2021: Reviews"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "65″–85″"
+          },
+          {
+            "name": "Weight",
+            "value": "48.7–119.3 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q80T+(2020)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMwyKy7LKqlKf8RowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ5OzC0uzUtXCLQwCFHQMDIwMtAEAId7CxViAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegQIJRBJ",
+        "title": "Samsung Q80T (2020)",
+        "price": "$1,200+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "Tech Reviews",
+            "link": "https://www.lbtechreviews.com/test/tv/samsung-q80t#:~:text=The%20TV%20is%20super,different%20types%20of%20content.",
+            "title": "Samsung Q80T Review: 4K QLED-LCD TV | Full Of Fun At Half The Price",
+            "snippet": "The TV is super easy to set up using your mobile, and the menu bar makes it easy to find different types of content… "
+          },
+          {
+            "name": "Gadget Review",
+            "link": "https://www.gadgetreview.com/best-tv-bright-room",
+            "title": "10 Best TVs for Bright Room in [year]"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "49″–100″"
+          },
+          {
+            "name": "Weight",
+            "value": "28.9–144.6 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q60T+(2020)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMwyqijIMM7LfsRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ5OzC0uzUtXCDQzCFHQMDIwMtAEANSc_bRiAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegQIJRBe",
+        "title": "Samsung Q60T (2020)",
+        "price": "$930+",
+        "rating": 4.6,
+        "sources": [
+          {
+            "name": "Trusted Reviews",
+            "link": "https://www.trustedreviews.com/reviews/samsung-qe55q65t#:~:text=Upscaling%20still%20manages%20to,well%20as%20expressive%20colours.",
+            "title": "Samsung Q60T/Q65T (QE55Q65T) review: An affordable QLED TV",
+            "snippet": "Upscaling still manages to impress with sharply drawn images, clarity and detail, as well as expressive colours."
+          },
+          {
+            "name": "Green Coast",
+            "link": "https://greencoast.org/best-energy-efficient-tvs/",
+            "title": "Top 5 Best Energy Efficient TVs - Green Coast"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "38″–109″"
+          },
+          {
+            "name": "Weight",
+            "value": "19.8–140.7 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q70A+(2021)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMxLN8q2MMoqfsRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ5OzC0uzUtXCDQ3cFTQMDIwMtQEAPrWkYhiAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegQIJRB0",
+        "title": "Samsung Q70A (2021)",
+        "price": "$840+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "tomsguide.com",
+            "link": "https://www.tomsguide.com/news/samsung-tvs-2021-release-dates-prices-and-every-new-model#:~:text=Like%20the%20Q70A%2C%20it%27s,Sound%20Lite%20%28OTS%20Lite%29.",
+            "title": "Samsung 2021 TV lineup: MicroLED, Neo QLED, 8K, 4K and more",
+            "snippet": "Like the Q70A, it's outfitted with Samsung's dual-LED backlight, basic HDR support with Quantum HDR, and Object… "
+          },
+          {
+            "name": "SmartReview.com",
+            "link": "https://www.smartreview.com/product-reviews/top-rated-hdtvs/120hz-hdtv",
+            "title": "Top Rated 120Hz LED HDTVs & 4K TVs | 2019-2020 | Best Native 120 Hz TV Reviews and Ratings | SmartReview.com"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "54″–86″"
+          },
+          {
+            "name": "Weight",
+            "value": "3.7–107.1 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Neo+QN85A+(2021)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NCwoNCqpMMwpeMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixilQhOzC0uzUtX8EvNVwj0szB1VNAwMjAy1AQA8F1vOWcAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRCKAQ",
+        "title": "Samsung Neo QN85A (2021)",
+        "price": "$1,000+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "t3.com",
+            "link": "https://www.t3.com/features/best-tv#:~:text=Samsung%27s%20image%20processing%20is,seriously%20impressive%20and%20detailed.",
+            "title": "Best TV 2021: the world's best 4K and 8K TVs, including top OLED and QLED buys",
+            "snippet": "Samsung's image processing is excellent, and means that both native 4K video and upscaled HD look seriously… "
+          },
+          {
+            "name": "RTINGS.com",
+            "link": "https://www.rtings.com/tv/reviews/best/by-usage/tv-shows",
+            "title": "The 5 Best TVs For Bright Rooms - Fall 2021: Reviews"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "55″–85″"
+          },
+          {
+            "name": "Weight",
+            "value": "39–113.8 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+The+Frame+LS03A+(2021)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMwzqqoqMjTJfsRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixilQtOzC0uzUtXCMlIVXArSsxNVfAJNjB2VNAwMjAy1AQAAswAmm0AAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRChAQ",
+        "title": "Samsung The Frame LS03A (2021)",
+        "price": "$890+",
+        "rating": 4.6,
+        "sources": [
+          {
+            "name": "Tech Reviews",
+            "link": "https://www.lbtechreviews.com/test/tv/samsung-the-frame-qe65ls03a-2021#:~:text=The%202021%20model%20has,a%20full%206%20GB.",
+            "title": "Review: Samsung The Frame QE65LS03A (2021) | Wall Decoration With Picture And Sound",
+            "snippet": "The 2021 model has been given significantly more storage space for photos: While its predecessor had to settle for… "
+          },
+          {
+            "name": "Tech Advisor",
+            "link": "https://www.techadvisor.com/test-centre/digital-home/best-tv-3686989/",
+            "title": "Best TV 2021: 4K Smart TV Reviews"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "43″–85″"
+          },
+          {
+            "name": "Weight",
+            "value": "19–99.4 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q80A+(2021)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NCyyLMzOSEk2e8RowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ5OzC0uzUtXCLQwcFTQMDIwMtQEAArQ-spiAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRC3AQ",
+        "title": "Samsung Q80A (2021)",
+        "price": "$890+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "reviewed.com",
+            "link": "https://www.reviewed.com/televisions/best-right-now/best-televisions#:~:text=It%27s%20a%20great%20option,very%20shallow%20black%20levels.",
+            "title": "Best TVs of 2021",
+            "snippet": "It's a great option for gamers (or for folks who are just looking for a bright TV), but the Q80A's panel type… "
+          },
+          {
+            "name": "RTINGS.com",
+            "link": "https://www.rtings.com/tv/reviews/best/by-usage/pc-monitor",
+            "title": "The 6 Best 4k TVs For PC Monitors - Fall 2021: Reviews"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "30″–86″"
+          },
+          {
+            "name": "Weight",
+            "value": "13–110.5 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+TU8000&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMyyKMorsMwrfMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixi5QtOzC0uzUtXCAm1MDAwAAD33K6EXQAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRDNAQ",
+        "title": "Samsung TU8000",
+        "price": "$570+",
+        "rating": 4.6,
+        "sources": [
+          {
+            "name": "PC Magazine",
+            "link": "https://in.pcmag.com/tvs/140536/samsung-55-class-tu8000-crystal-uhd-tv-un55tu8000fxza#:~:text=It%20can%20also%20mirror,and%20Samsung%27s%20SmartThings%20app.",
+            "title": "Samsung 55-Class TU8000 Crystal UHD TV (UN55TU8000FXZA) - Review 2021",
+            "snippet": "It can also mirror your computer or mobile device's screen through Windows 8.1/10 wireless display support, Apple… "
+          },
+          {
+            "name": "iDrop News",
+            "link": "https://www.idropnews.com/news/6-best-tvs-with-apple-airplay-built-in/146034/",
+            "title": "6 Best TVs with Apple AirPlay Built-In"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "43″–90″"
+          },
+          {
+            "name": "Weight",
+            "value": "17.9–150 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+QN800A+Neo+QLED+8K+Smart+TV&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NCwyqCoxMS3KfsRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiVQ5OzC0uzUtXCPSzMDBwVPBLzVcI9HF1UbDwVgjOTSwqUQgJAwDcjo1CcgAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRDjAQ",
+        "title": "Samsung QN800A Neo QLED 8K Smart TV",
+        "price": "$2,600+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "Newsweek",
+            "link": "https://www.newsweek.com/samsung-qn800a-review-bright-8k-display-beautiful-design-1570214#:~:text=With%20the%20essential%20gaming,TVs%20on%20the%20market.",
+            "title": "The Samsung QN800A Review: Bright 8K Display and Beautiful Design",
+            "snippet": "With the essential gaming features, smart TV options and beautiful design, the QN800A is one of the best 8K TVs on… "
+          },
+          {
+            "name": "Tom's Guide",
+            "link": "https://www.tomsguide.com/news/samsung-tvs-2021-release-dates-prices-and-every-new-model",
+            "title": "Samsung 2021 TV lineup: MicroLED, Neo QLED, 8K, 4K and more"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "65″–85″"
+          },
+          {
+            "name": "Weight",
+            "value": "17.9–95.5 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+AU8000+(2021)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NCxKSqm0LCuseMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ1OzC0uzUtXcAy1MDAwUNAwMjAy1AQAh3uwKmQAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRD5AQ",
+        "title": "Samsung AU8000 (2021)",
+        "price": "$440+",
+        "rating": 4.5,
+        "sources": [
+          {
+            "name": "Techweekmag.com",
+            "link": "https://www.techweekmag.com/reviews/tv/samsung-au8000-review/#:~:text=This%20series%20of%20TVs,best-in-class%20Smart%20TV%20system.",
+            "title": "Samsung AU8000 Review: Worth Buying If You Don't Want To Empty Your Pockets On A TV",
+            "snippet": "This series of TVs is easy to use, has a minimalist design, a choice of built-in voice assistant and a… "
+          },
+          {
+            "name": "Rhythm of the Home",
+            "link": "https://rhythmofthehome.com/best-ultra-thin-tv/",
+            "title": "The 10 Best Ultra Thin TVs of 2021 - Rhythm of the Home"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "43″–85″"
+          },
+          {
+            "name": "Weight",
+            "value": "18.5–95.9 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q950TS&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMwyzTbOLswzfMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixi5QtOzC0uzUtXCLQ0NQgJBgA7XHlIXQAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRCQAg",
+        "title": "Samsung Q950TS",
+        "price": "$5,900+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "trustedreviews.com",
+            "link": "https://www.trustedreviews.com/best/best-tv-3440232#:~:text=The%20TV%27s%20scorching%20brightness,remaining%20nuanced%20and%20natural.",
+            "title": "Best TV 2021: The best budget and premium TVs",
+            "snippet": "The TV's scorching brightness also means HDR content fizzes off the screen, while remaining nuanced and natural."
+          },
+          {
+            "name": "Lifewire",
+            "link": "https://www.lifewire.com/best-75-inch-tvs-4685702",
+            "title": "The 5 Best 75-Inch TVs of 2021"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "65″–85″"
+          },
+          {
+            "name": "Weight",
+            "value": "57.1–195.1 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q60R&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMwwKzaIL88ofsRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixi5QlOzC0uzUtXCDQzCAIA4nP8ZVsAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRCmAg",
+        "title": "Samsung Q60R",
+        "price": "$1,100+",
+        "rating": 4.6,
+        "sources": [
+          {
+            "name": "TechHive",
+            "link": "https://www.techhive.com/article/3453639/samsung-q60r-review.html#:~:text=The%20Samsung%20Q60R%27s%20color,smaller%2043-inch%20form%20factor.",
+            "title": "Samsung Q60R 4K UHD smart TV review: The QLED color experience for less",
+            "snippet": "The Samsung Q60R's color and overall user experience are best in class, and it's the only QLED available in the… "
+          },
+          {
+            "name": "YouTube",
+            "link": "https://www.youtube.com/watch?v=QQymJQpehdw",
+            "title": "TOP 5: Best TV 2020"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "43″–82″"
+          },
+          {
+            "name": "Weight",
+            "value": "5.7–107.6 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+Q70T+(2020)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMxKLzNPKSqseMRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ5OzC0uzUtXCDQ3CFHQMDIwMtAEABL93SBiAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRC6Ag",
+        "title": "Samsung Q70T (2020)",
+        "price": "$1,000+",
+        "rating": 4.7,
+        "sources": [
+          {
+            "name": "DigitalMag",
+            "link": "https://www.digitweek.com/samsung-q70t-qled-tv-qn55q70tafxza-review/#:~:text=It%20comes%20with%20large,TV%20that%20come%20pre-installed.",
+            "title": "Samsung Q70T QLED TV (QN55Q70TAFXZA) Review",
+            "snippet": "It comes with large variety of apps -- Netflix, Prime Video, Hulu and Apple TV that come pre-installed."
+          },
+          {
+            "name": "Lifewire",
+            "link": "https://www.lifewire.com/best-80-to-85-inch-tvs-4682636",
+            "title": "The 7 Best 80- to 85-inch TVs of 2021"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "54″–86″"
+          },
+          {
+            "name": "Weight",
+            "value": "35.7–140.7 lb"
+          }
+        ],
+        "block_position": 3
+      },
+      {
+        "link": "https://www.google.com/search?q=Samsung+TU7000+(2020)&gl=us&hl=en&stick=H4sIAAAAAAAAAONgVuLVT9c3NMyyyE62MEkufsRowS3w8sc9YSn9SWtOXmPU5OIKzsgvd80rySypFJLmYoOyBKX4uVB18ixiFQ1OzC0uzUtXCAk1NzAwUNAwMjAy0AQAFEhWb2QAAAA&sa=X&ved=2ahUKEwi-sPO1jfrzAhXippUCHY19DMgQoYACegUIJRDQAg",
+        "title": "Samsung TU7000 (2020)",
+        "price": "$390+",
+        "rating": 4.5,
+        "sources": [
+          {
+            "name": "Personal Reviews",
+            "link": "https://www.personal-reviews.com/2020/03/samsung-un58tu7000-review-un58tu7000fxza/#:~:text=In%20addition%2C%20this%20TV,films%2C%20sports%20and%20games.",
+            "title": "Samsung UN58TU7000 Review (UN58TU7000FXZA)",
+            "snippet": "In addition, this TV has a motion rate of 120, so the images display smoothly on the screen, so you can definitely… "
+          },
+          {
+            "name": "TCL",
+            "link": "https://www.tcl.com/us/en/top-tv-apps",
+            "title": "Top TV Apps"
+          }
+        ],
+        "specifications": [
+          {
+            "name": "Screen Size",
+            "value": "32″–81″"
+          },
+          {
+            "name": "Weight",
+            "value": "17.9–83.1 lb"
+          }
+        ],
+        "block_position": 3
+      }
+    ],
+    "local_service_ads": [
+      {
+        "title": "City Wide Plumbing Services Corp",
+        "link": "https://www.google.com/search?q=plumber&cs=0&gsas=1&sabplaceid=ChIJYeZuBI9YwokRjMDs_IEyCwo",
+        "is_google_guaranteed": true,
+        "extensions": [
+          "Serves New York",
+          "Open 24/7",
+          "68 years in business"
+        ],
+        "rating": 4.6,
+        "position": 1,
+        "block_position": "top"
+      },
+      {
+        "title": "Down The Line Sewer Drains And Piping LLC",
+        "link": "https://www.google.com/search?q=plumber&cs=0&gsas=1&sabplaceid=ChIJYeZuBI9YwokRjMDs_IEyCwo",
+        "is_google_guaranteed": true,
+        "extensions": [
+          "Serves New York",
+          "Open 24/7",
+          "Opened in 2021",
+          "2021"
+        ],
+        "rating": 5,
+        "position": 2,
+        "block_position": "top"
+      },
+      {
+        "title": "Empire Water Main & Sewer",
+        "link": "https://www.google.com/search?q=plumber&cs=0&gsas=1&sabplaceid=ChIJYeZuBI9YwokRjMDs_IEyCwo",
+        "is_google_guaranteed": true,
+        "extensions": [
+          "Serves New York",
+          "Open 24/7",
+          "4 years in business"
+        ],
+        "rating": 4.4,
+        "position": 3,
+        "block_position": "top"
+      }
+    ],
+    "film_info": {
+      "title": "My Donkey, My Lover & I (Antoinette dans les Cévennes)",
+      "subtitle": "2020 ‧ Romance/Adventure ‧ 1h 37m",
+      "year": "2020",
+      "genre": "Romance/Adventure",
+      "length": "1h 37m",
+      "cast": [
+        {
+          "actor": "Laure Calamy",
+          "character": "Antoinette Lapouge",
+          "link": "https://www.google.ca/search?gl=ca&hl=en&q=Laure+Calamy&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwqyMotMC2vUuLSz9U3SK9IKkku0hLKTrbST8vMyQUTVsmJxSWLWHl8EkuLUhWcE3MScyt3sDICAHh5OnNDAAAA&sa=X&ved=2ahUKEwinq6evvfX2AhUE3xoKHYshBG4QgOQBegQIHhAE"
+        },
+        {
+          "actor": "Benjamin Lavernhe",
+          "character": "Vladimir Loubier",
+          "link": "https://www.google.ca/search?gl=ca&hl=en&q=Benjamin+Lavernhe&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwqyMotMC2vUuLSz9U3qCwusrAw0RLKTrbST8vMyQUTVsmJxSWLWAWdUvOyEnMz8xR8EstSi_IyUnewMgIA36HEeUgAAAA&sa=X&ved=2ahUKEwinq6evvfX2AhUE3xoKHYshBG4QgOQBegQIHhAG"
+        },
+        {
+          "actor": "Olivia Côte",
+          "character": "La femme de Vladimir",
+          "link": "https://www.google.ca/search?gl=ca&hl=en&q=Olivia+C%C3%B4te&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwqyMotMC2vUuLSz9U3qDSxLCks1xLKTrbST8vMyQUTVsmJxSWLWHn8czLLMhMVnA9vKUndwcoIAOR5bodDAAAA&sa=X&ved=2ahUKEwinq6evvfX2AhUE3xoKHYshBG4QgOQBegQIHhAI"
+        },
+        {
+          "actor": "Jean-Pierre Martins",
+          "character": "Shériff",
+          "link": "https://www.google.ca/search?gl=ca&hl=en&q=Jean-Pierre+Martins&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwqyMotMC2vUuLSz9U3ME0yKCmx0BLKTrbST8vMyQUTVsmJxSWLWIW9UhPzdAMyU4uKUhV8E4tKMvOKd7AyAgBu6ZDoSgAAAA&sa=X&ved=2ahUKEwinq6evvfX2AhUE3xoKHYshBG4QgOQBegQIHhAK"
+        },
+        {
+          "actor": "Ludivine Bluche",
+          "character": "rebouteuse",
+          "link": "https://www.google.ca/search?gl=ca&hl=en&q=my+donkey,+my+lover+%26+i+ludivine+bluche&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwqyMotMC2vUoJw88xNi4tTskq0hLKTrfTTMnNywYRVcmJxySJW9dxKhZT8vOzUSh0FIDMnvyy1SEFNIVMhpzQlsywzL1UhKac0OSN1BysjAOymmq5hAAAA&sa=X&ved=2ahUKEwinq6evvfX2AhUE3xoKHYshBG4QgOQBegQIHhAM"
+        },
+        {
+          "actor": "Ludivine de Chastenet",
+          "character": "Elizabeth",
+          "link": "https://www.google.ca/search?gl=ca&hl=en&q=Ludivine+de+Chastenet&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwqyMotMC2vUoJwk8xS8orMilK0hLKTrfTTMnNywYRVcmJxySJWUZ_SlMyyzLxUhZRUBecMoFhqXmrJDlZGAKN_TM9PAAAA&sa=X&ved=2ahUKEwinq6evvfX2AhUE3xoKHYshBG4QgOQBegQIHhAO"
+        },
+        {
+          "actor": "Matthieu Sampeur",
+          "character": "Romain",
+          "link": "https://www.google.ca/search?gl=ca&hl=en&q=Matthieu+Sampeur&stick=H4sIAAAAAAAAAONgFuLVT9c3NMwqyMotMC2vUoJwMywNDPOSDFK0hLKTrfTTMnNywYRVcmJxySJWAd_EkpKMzNRSheDE3ILU0qIdrIwARHZhN0oAAAA&sa=X&ved=2ahUKEwinq6evvfX2AhUE3xoKHYshBG4QgOQBegQIHhAQ"
+        }
+      ],
+      "services": [
+        {
+          "price": "$6.99",
+          "link": "https://tv.apple.com/ca/movie/my-donkey-my-lover--i/umc.cmc.4i8zovwf4r4wyaoczsr7ah5aj?action=play",
+          "title": "tv.apple.com"
+        }
+      ],
+      "reviews": [
+        {
+          "rating": "6.5/10",
+          "source": "IMDb",
+          "description": "My Donkey, My Lover & I scored 6.5 out of 10 on IMDb.",
+          "link": "https://www.imdb.com/title/tt11013434/"
+        },
+        {
+          "rating": "3.6/5",
+          "source": "AlloCiné",
+          "description": "My Donkey, My Lover & I got a 3.6 stars review on AlloCiné.",
+          "link": "https://www.allocine.fr/film/fichefilm_gen_cfilm=272217.html"
+        },
+        {
+          "rating": "100%",
+          "source": "Rotten Tomatoes",
+          "description": "My Donkey, My Lover & I scored 100 percent on Rotten Tomatoes.",
+          "link": "https://www.rottentomatoes.com/m/antoinette_in_the_cevennes"
+        }
+      ],
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQn1Sz_in5laRUUTMwBj8lejXeBKhyUj9ytdi5GoeJvFYCfOOCe"
+    },
+    "pagination": {
+      "current": 1,
+      "next": "https://www.google.com/search?q=pizza&gl=us&hl=en&ei=zi14YdSPM5DK-gS18ZTgCg&start=10&sa=N&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ8NMDegQIAhBK",
+      "other_pages": [
+        {
+          "page": 2,
+          "link": "https://www.google.com/search?q=pizza&gl=us&hl=en&ei=zi14YdSPM5DK-gS18ZTgCg&start=10&sa=N&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ8tMDegQIAhA4"
+        },
+        {
+          "page": 3,
+          "link": "https://www.google.com/search?q=pizza&gl=us&hl=en&ei=zi14YdSPM5DK-gS18ZTgCg&start=20&sa=N&ved=2ahUKEwjUruXHwOjzAhUQpZ4KHbU4BawQ8tMDegQIAhA6"
+        }
+      ],
+      "api_pagination": {
+        "next": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United%20States&engine=google&page=2",
+        "other_pages": [
+          {
+            "page": 2,
+            "link": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United%20States&engine=google&page=2"
+          },
+          {
+            "page": 3,
+            "link": "https://api.scaleserp.com/search?api_key=APIKEY&q=pizza&location=United%20States&engine=google&page=3"
+          }
+        ]
+      }
+    }
+  }

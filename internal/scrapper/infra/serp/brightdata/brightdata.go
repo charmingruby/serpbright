@@ -15,20 +15,20 @@ func NewBrightData(cfg config.Config) *BrightData {
 	)
 
 	return &BrightData{
-		Host:     cfg.BrightDataConfig.Host,
-		Port:     cfg.BrightDataConfig.Port,
-		Username: cfg.BrightDataConfig.Username,
-		Password: cfg.BrightDataConfig.Password,
-		ProxyURL: formattedProxyURL,
+		Host:        cfg.BrightDataConfig.Host,
+		Port:        cfg.BrightDataConfig.Port,
+		Username:    cfg.BrightDataConfig.Username,
+		Password:    cfg.BrightDataConfig.Password,
+		ProxyURL:    formattedProxyURL,
+		IncludeHTML: cfg.SearchConfig.IncludeHTML,
 	}
 }
 
 type BrightData struct {
-	Host       string
-	Port       int
-	CustomerID string
-	Zone       string
-	Username   string
-	Password   string
-	ProxyURL   string
+	Host        string
+	Port        int
+	Username    string
+	Password    string
+	ProxyURL    string
+	IncludeHTML bool
 }

@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"log/slog"
 	"os"
+	"os/signal"
+	"syscall"
 
 	"github.com/charmingruby/serpright/config"
 	rabbitMQPubSub "github.com/charmingruby/serpright/internal/common/queue/rabbitmq"
@@ -52,9 +54,15 @@ func main() {
 	svc := scrapper.NewService(serp, &searchResultRepo)
 
 	processCampaingTaskEventHandler := queue.NewCampaignTaskProcessHandler(svc)
+
 	go pubsub.Subscribe(event.ProcessCampaignTask, processCampaingTaskEventHandler.Handle)
 
-	runBrightDataActions(svc, serp, cfg.DebugMode)
+	sigs := make(chan os.Signal, 1)
+	signal.Notify(sigs, syscall.SIGINT, syscall.SIGTERM)
+
+	<-sigs
+
+	slog.Info("Terminating gracefully")
 }
 
 func runBrightDataActions(
