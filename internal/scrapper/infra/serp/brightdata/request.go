@@ -12,6 +12,7 @@ import (
 	"os"
 	"strconv"
 	"strings"
+	"time"
 
 	"github.com/charmingruby/serpright/internal/common/helper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
@@ -81,7 +82,8 @@ func (s *BrightData) doRequest(campaignTask entity.CampaignTask) (BrightDataSear
 	}
 
 	if s.DebugMode {
-		file, err := os.Create("./docs/bright_data_response.json")
+		path := fmt.Sprintf("./docs/bright_data_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
+		file, err := os.Create(path)
 		if err != nil {
 			return BrightDataSearchResult{}, err
 		}
