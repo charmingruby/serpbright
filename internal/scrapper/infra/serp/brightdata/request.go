@@ -35,12 +35,59 @@ type brightDataRequestParams struct {
 	IncludeHTML  bool
 }
 
-func (s *BrightData) doRequest(campaignTask entity.CampaignTask) (BrightDataSearchResult, error) {
-	reqUrl := s.buildBrightDataRequestURL(campaignTask)
-	if s.DebugMode {
-		slog.Info("BUILT REQUEST URL: " + reqUrl)
+func (s *BrightData) doHTMLRequest(reqURL string) (string, error) {
+	proxy, err := url.Parse(s.ProxyURL)
+	if err != nil {
+		slog.Error("Proxy URL parse error: " + err.Error())
+		return "", err
 	}
 
+	client := &http.Client{
+		Transport: &http.Transport{
+			Proxy: http.ProxyURL(proxy),
+			TLSClientConfig: &tls.Config{
+				InsecureSkipVerify: true,
+			},
+		},
+	}
+
+	req, err := http.NewRequest("GET", reqURL, nil)
+	if err != nil {
+		slog.Error("Request creation error: " + err.Error())
+		return "", err
+	}
+
+	resp, err := client.Do(req)
+	if err != nil {
+		slog.Error("Request error: " + err.Error())
+		return "", err
+	}
+	defer resp.Body.Close()
+
+	if resp.StatusCode != http.StatusOK {
+		body, _ := io.ReadAll(resp.Body)
+		slog.Error(fmt.Sprintf("Request failed with status: %d. Response body: %s", resp.StatusCode, string(body)))
+		return "", fmt.Errorf("request failed with status: %d", resp.StatusCode)
+	}
+
+	body, err := io.ReadAll(resp.Body)
+	if err != nil {
+		slog.Error("Error reading response body: " + err.Error())
+		return "", err
+	}
+
+	if s.DebugMode {
+		path := fmt.Sprintf("./tmp/bright_data_%s_response.html", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
+		err := os.WriteFile(path, body, 0644)
+		if err != nil {
+			return "", err
+		}
+	}
+
+	return string(body), nil
+}
+
+func (s *BrightData) doJSONRequest(reqURL string) (BrightDataSearchResult, error) {
 	proxy, err := url.Parse(s.ProxyURL)
 	if err != nil {
 		slog.Error("Proxy URL parse error: " + err.Error())
@@ -56,7 +103,7 @@ func (s *BrightData) doRequest(campaignTask entity.CampaignTask) (BrightDataSear
 		},
 	}
 
-	req, err := http.NewRequest("GET", reqUrl+"&brd_json=1", nil)
+	req, err := http.NewRequest("GET", reqURL+"&brd_json=1", nil)
 	if err != nil {
 		slog.Error("Request creation error: " + err.Error())
 		return BrightDataSearchResult{}, err
@@ -82,14 +129,8 @@ func (s *BrightData) doRequest(campaignTask entity.CampaignTask) (BrightDataSear
 	}
 
 	if s.DebugMode {
-		path := fmt.Sprintf("./docs/bright_data_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
-		file, err := os.Create(path)
-		if err != nil {
-			return BrightDataSearchResult{}, err
-		}
-		defer file.Close()
-
-		_, err = io.Copy(file, resp.Body)
+		path := fmt.Sprintf("./tmp/bright_data_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
+		err := os.WriteFile(path, body, 0644)
 		if err != nil {
 			return BrightDataSearchResult{}, err
 		}
