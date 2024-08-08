@@ -156,7 +156,7 @@ func (s *BrightData) buildBrightDataRequestURL(campaignTask entity.CampaignTask)
 		HL:           helper.EmptyString(campaignTask.Locale, "pt-br"),
 		Q:            url.QueryEscape(campaignTask.Keyword),
 		IncludeHTML:  s.IncludeHTML,
-		Device:       "0",
+		Device:       s.extractDeviceFromTask(campaignTask),
 		Page:         int(campaignTask.Page) * itemsPerPage,
 	}
 
@@ -174,4 +174,15 @@ func (s *BrightData) buildBrightDataRequestURL(campaignTask entity.CampaignTask)
 	url := baseURL + strings.Join(builtParams[:], "&") + defaultParams
 
 	return url
+}
+func (s *BrightData) extractDeviceFromTask(task entity.CampaignTask) string {
+	if task.Device == constant.MobileDevice {
+		if task.MobileType == constant.MobileTypeAndroid {
+			return AndroidDevice
+		}
+
+		return IOSDevice
+	}
+
+	return DesktopDevice
 }
