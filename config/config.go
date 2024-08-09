@@ -19,13 +19,13 @@ type environment struct {
 }
 
 func NewConfig() (Config, error) {
-	slog.Info("Loading environment...")
+	slog.Info("ENVIRONMENT: " + "Loading environment variables...")
 	environment := environment{}
 	if err := env.Parse(&environment); err != nil {
 		return Config{}, err
 	}
 
-	slog.Info("Environment loaded successfully!")
+	slog.Info("ENVIRONMENT: Environment variables loaded successfully!")
 
 	cfg := Config{
 		DebugMode: environment.DebugMode,

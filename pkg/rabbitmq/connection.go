@@ -24,7 +24,7 @@ func NewRabbitMQConnection(uri string) (*amqp.Channel, func() error) {
 		log.Fatal(err)
 	}
 
-	slog.Info("Connected successfully to RabbitMQ!")
+	slog.Info("RABBITMQ: Connected successfully to RabbitMQ!")
 
 	return ch, ch.Close
 }

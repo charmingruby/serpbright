@@ -1,10 +1,8 @@
 package brightdata
 
 import (
-	"fmt"
 	"log/slog"
 
-	"github.com/charmingruby/serpright/internal/common/helper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity/process_entity"
 )
@@ -21,22 +19,16 @@ func (s *BrightData) Search(campaignTask entity.CampaignTask) (process_entity.Se
 		if err != nil {
 			return process_entity.SearchResult{}, err
 		}
-		htmlResult = res
-	}
+		slog.Info("BRIGHT DATA: Processed HTML request")
 
-	if s.DebugMode && s.IncludeHTML {
-		fmt.Println(htmlResult)
+		htmlResult = res
 	}
 
 	serchResult, err := s.doJSONRequest(reqURL)
 	if err != nil {
 		return process_entity.SearchResult{}, err
 	}
-	if s.DebugMode {
-		if err := helper.DebugJSON(serchResult); err != nil {
-			return process_entity.SearchResult{}, err
-		}
-	}
+	slog.Info("BRIGHT DATA: Processed JSON request")
 
 	rawData := BrighDataResultToSearchResult(serchResult, htmlResult, campaignTask)
 

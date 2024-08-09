@@ -9,7 +9,7 @@ import (
 )
 
 func NewMongoConnection(url, database string) (*mongo.Database, error) {
-	slog.Info("Connecting to Mongo...")
+	slog.Info("MONGO: Connecting to Mongo...")
 
 	clOpts := options.Client().ApplyURI(url)
 
@@ -22,7 +22,7 @@ func NewMongoConnection(url, database string) (*mongo.Database, error) {
 		return nil, err
 	}
 
-	slog.Info("Connected to Mongo successfully!")
+	slog.Info("MONGO: Connected to Mongo successfully!")
 
 	db := cl.Database(database)
 

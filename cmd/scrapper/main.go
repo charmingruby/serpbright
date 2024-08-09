@@ -61,5 +61,5 @@ func main() {
 
 	<-sigs
 
-	slog.Info("Terminating gracefully")
+	slog.Info("APPLICATION: Terminating gracefully")
 }

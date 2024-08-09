@@ -90,7 +90,7 @@ func (s *BrightData) doHTMLRequest(reqURL string) (string, error) {
 func (s *BrightData) doJSONRequest(reqURL string) (BrightDataSearchResult, error) {
 	proxy, err := url.Parse(s.ProxyURL)
 	if err != nil {
-		slog.Error("Proxy URL parse error: " + err.Error())
+		slog.Error("Proxy URL parse error: ")
 		return BrightDataSearchResult{}, err
 	}
 
@@ -105,26 +105,25 @@ func (s *BrightData) doJSONRequest(reqURL string) (BrightDataSearchResult, error
 
 	req, err := http.NewRequest("GET", reqURL+"&brd_json=1", nil)
 	if err != nil {
-		slog.Error("Request creation error: " + err.Error())
+		slog.Error("Request creation error: ")
 		return BrightDataSearchResult{}, err
 	}
 
 	resp, err := client.Do(req)
 	if err != nil {
-		slog.Error("Request error: " + err.Error())
+		slog.Error("Request error: ")
 		return BrightDataSearchResult{}, err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
-		body, _ := io.ReadAll(resp.Body)
-		slog.Error(fmt.Sprintf("Request failed with status: %d. Response body: %s", resp.StatusCode, string(body)))
+		slog.Error(fmt.Sprintf("Request failed with status: %d", resp.StatusCode))
 		return BrightDataSearchResult{}, fmt.Errorf("request failed with status: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
-		slog.Error("Error reading response body: " + err.Error())
+		slog.Error("Error reading response body: ")
 		return BrightDataSearchResult{}, err
 	}
 
@@ -138,7 +137,7 @@ func (s *BrightData) doJSONRequest(reqURL string) (BrightDataSearchResult, error
 
 	var serpResult BrightDataSearchResult
 	if err := json.Unmarshal(body, &serpResult); err != nil {
-		slog.Error("Decode error: " + err.Error())
+		slog.Error("Decode error: ")
 		return BrightDataSearchResult{}, err
 	}
 

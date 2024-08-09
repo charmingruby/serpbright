@@ -33,8 +33,8 @@ func (h *CampaignTaskProcessHandler) Handle(msg []byte) {
 
 	output, err := h.ScrapperService.ProcessSerpSearchUseCase(input)
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal(err.Error())
 	}
 
-	log.Printf("PROCESSED DATA: %v", output)
+	log.Printf("TASK PROCESSED: %s", output.SearchResult.ID)
 }
