@@ -13,24 +13,13 @@ func (s *BrightData) Search(campaignTask entity.CampaignTask) (process_entity.Se
 		slog.Info("BUILT REQUEST URL: " + reqURL)
 	}
 
-	var htmlResult string
-	if s.IncludeHTML {
-		res, err := s.doHTMLRequest(reqURL)
-		if err != nil {
-			return process_entity.SearchResult{}, err
-		}
-		slog.Info("BRIGHT DATA: Processed HTML request")
-
-		htmlResult = res
-	}
-
-	serchResult, err := s.doJSONRequest(reqURL)
+	serchResult, err := s.doRequest(reqURL)
 	if err != nil {
 		return process_entity.SearchResult{}, err
 	}
 	slog.Info("BRIGHT DATA: Processed JSON request")
 
-	rawData := BrighDataResultToSearchResult(serchResult, htmlResult, campaignTask)
+	rawData := BrighDataResultToSearchResult(serchResult, campaignTask)
 
 	return rawData, nil
 }
