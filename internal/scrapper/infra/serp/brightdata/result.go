@@ -3,7 +3,6 @@ package brightdata
 import "time"
 
 type BrightDataSearchResult struct {
-	BottomAds  []Ad         `json:"bottom_ads"`
 	General    GeneralInfo  `json:"general"`
 	Images     []Image      `json:"images"`
 	Input      InputInfo    `json:"input"`
@@ -13,6 +12,8 @@ type BrightDataSearchResult struct {
 	Pagination Pagination   `json:"pagination"`
 	Related    []Related    `json:"related"`
 	TopAds     []Ad         `json:"top_ads"`
+	TopPla     []TopPla     `json:"top_pla"`
+	BottomAds  []Ad         `json:"bottom_ads"`
 	HTML       string       `json:"html"`
 }
 
@@ -25,6 +26,23 @@ type Ad struct {
 	Rank         int         `json:"rank"`
 	ReferralLink string      `json:"referral_link"`
 	Title        string      `json:"title"`
+}
+
+type TopPla struct {
+	GlobalRank   int     `json:"global_rank"`
+	Image        string  `json:"image,omitempty"`
+	ImageAlt     string  `json:"image_alt,omitempty"`
+	ImageBase64  string  `json:"image_base64,omitempty"`
+	ImageURL     string  `json:"image_url,omitempty"`
+	Link         string  `json:"link,omitempty"`
+	Price        string  `json:"price,omitempty"`
+	Rating       float64 `json:"rating,omitempty"`
+	ReviewsCnt   int     `json:"reviews_cnt,omitempty"`
+	Rank         int     `json:"rank"`
+	ReferralLink string  `json:"referral_link,omitempty"`
+	Shop         string  `json:"shop,omitempty"`
+	Title        string  `json:"title"`
+	ViewAll      bool    `json:"view_all,omitempty"`
 }
 
 type Extension struct {
