@@ -16,6 +16,7 @@ import (
 
 	"github.com/charmingruby/serpright/internal/common/helper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
+	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata/data"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/constant"
 )
 
@@ -34,11 +35,11 @@ type brightDataRequestParams struct {
 	Page         int
 }
 
-func (s *BrightData) doRequest(reqURL string) (BrightDataSearchResult, error) {
+func (s *BrightData) doRequest(reqURL string) (data.BrightDataSearchResult, error) {
 	proxy, err := url.Parse(s.ProxyURL)
 	if err != nil {
 		slog.Error("Proxy URL parse error: ")
-		return BrightDataSearchResult{}, err
+		return data.BrightDataSearchResult{}, err
 	}
 
 	client := &http.Client{
@@ -53,39 +54,39 @@ func (s *BrightData) doRequest(reqURL string) (BrightDataSearchResult, error) {
 	req, err := http.NewRequest("GET", reqURL+"&brd_json=html", nil)
 	if err != nil {
 		slog.Error("Request creation error: ")
-		return BrightDataSearchResult{}, err
+		return data.BrightDataSearchResult{}, err
 	}
 
 	resp, err := client.Do(req)
 	if err != nil {
 		slog.Error("Request error: ")
-		return BrightDataSearchResult{}, err
+		return data.BrightDataSearchResult{}, err
 	}
 	defer resp.Body.Close()
 
 	if resp.StatusCode != http.StatusOK {
 		slog.Error(fmt.Sprintf("Request failed with status: %d", resp.StatusCode))
-		return BrightDataSearchResult{}, fmt.Errorf("request failed with status: %d", resp.StatusCode)
+		return data.BrightDataSearchResult{}, fmt.Errorf("request failed with status: %d", resp.StatusCode)
 	}
 
 	body, err := io.ReadAll(resp.Body)
 	if err != nil {
 		slog.Error("Error reading response body: ")
-		return BrightDataSearchResult{}, err
+		return data.BrightDataSearchResult{}, err
 	}
 
 	if s.DebugMode {
 		path := fmt.Sprintf("./tmp/bright_data_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
 		err := os.WriteFile(path, body, 0644)
 		if err != nil {
-			return BrightDataSearchResult{}, err
+			return data.BrightDataSearchResult{}, err
 		}
 	}
 
-	var serpResult BrightDataSearchResult
+	var serpResult data.BrightDataSearchResult
 	if err := json.Unmarshal(body, &serpResult); err != nil {
 		slog.Error("Decode error: ")
-		return BrightDataSearchResult{}, err
+		return data.BrightDataSearchResult{}, err
 	}
 
 	return serpResult, nil

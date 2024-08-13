@@ -1,4 +1,4 @@
-package brightdata
+package data
 
 import "time"
 
