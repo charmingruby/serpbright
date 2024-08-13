@@ -17,7 +17,7 @@ import (
 	"github.com/charmingruby/serpright/internal/common/helper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata/data"
-	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/constant"
+	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/util/constant"
 )
 
 const (
