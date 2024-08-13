@@ -7,15 +7,18 @@ import (
 )
 
 type environment struct {
-	SearchResultIncludeHTML bool   `env:"SEARCH_RESULT_INCLUDE_HTML,required"`
-	BrightDataHost          string `env:"BRIGHT_DATA_HOST,required"`
-	BrightDataPort          int    `env:"BRIGHT_DATA_PORT,required"`
-	BrightDataUsername      string `env:"BRIGHT_DATA_USERNAME,required"`
-	BrightDataPassword      string `env:"BRIGHT_DATA_PASSWORD,required"`
-	RabbitMQURI             string `env:"RABBITMQ_URI,required"`
-	MongoURI                string `env:"MONGO_URI,required"`
-	MongoDatabase           string `env:"MONGO_DATABASE,required"`
-	DebugMode               bool   `env:"DEBUG_MODE,required"`
+	BrightDataHost                   string `env:"BRIGHT_DATA_HOST,required"`
+	BrightDataPort                   int    `env:"BRIGHT_DATA_PORT,required"`
+	BrightDataUsername               string `env:"BRIGHT_DATA_USERNAME,required"`
+	BrightDataPassword               string `env:"BRIGHT_DATA_PASSWORD,required"`
+	RabbitMQURI                      string `env:"RABBITMQ_URI,required"`
+	MongoURI                         string `env:"MONGO_URI,required"`
+	MongoDatabase                    string `env:"MONGO_DATABASE,required"`
+	SearchIncludeHTML                bool   `env:"SEARCH_INCLUDE_HTML,required"`
+	SearchSkipRedirectAll            bool   `env:"SEARCH_SKIP_REDIRECT_ALL,required"`
+	SearchSkipRedirectCampaigns      string `env:"SEARCH_SKIP_REDIRECT_CAMPAIGNS,required"`
+	SearchSkipCustomerDomainRedirect bool   `env:"SEARCH_SKIP_CUSTOMER_DOMAIN_REDIRECT,required"`
+	DebugMode                        bool   `env:"DEBUG_MODE,required"`
 }
 
 func NewConfig() (Config, error) {
@@ -43,7 +46,10 @@ func NewConfig() (Config, error) {
 			DatabaseName: environment.MongoDatabase,
 		},
 		SearchConfig: searchConfig{
-			IncludeHTML: environment.SearchResultIncludeHTML,
+			IncludeHTML:                environment.SearchIncludeHTML,
+			SkipRedirectAll:            environment.SearchSkipRedirectAll,
+			SkipRedirectCampaigns:      environment.SearchSkipRedirectCampaigns,
+			SkipCustomerDomainRedirect: environment.SearchSkipCustomerDomainRedirect,
 		},
 	}
 
@@ -75,5 +81,8 @@ type mongoConfig struct {
 }
 
 type searchConfig struct {
-	IncludeHTML bool
+	IncludeHTML                bool
+	SkipRedirectAll            bool
+	SkipRedirectCampaigns      string
+	SkipCustomerDomainRedirect bool
 }
