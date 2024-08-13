@@ -7,36 +7,44 @@ import (
 	"github.com/charmingruby/serpright/internal/scrapper/domain/entity/process_entity"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata/data"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata/parser"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
-func (s *BrightData) parseResult(apiResult data.BrightDataSearchResult, task entity.CampaignTask) process_entity.SearchResult {
-	parser := parser.NewBrightDataParser(s.IncludeHTML)
-
-	topADs, bottomADs := parser.FilterADs(&apiResult)
-	apiResult.BottomAds = bottomADs
-	apiResult.TopAds = topADs
-
+func (s *BrightData) parseResult(apiData data.BrightDataSearchResult, task entity.CampaignTask) process_entity.SearchResult {
 	searchResult := process_entity.SearchResult{}
 
+	parser := parser.NewBrightDataParser(parser.BrightDataParserOptions{
+		IncludeHTML:                s.SearchConfig.IncludeHTML,
+		SkipRedirectAll:            s.SearchConfig.SkipRedirectAll,
+		SkipRedirectCampaigns:      s.SearchConfig.SkipRedirectCampaigns,
+		SkipCustomerDomainRedirect: s.SearchConfig.SkipCustomerDomainRedirect,
+	})
+
+	topADs, bottomADs := parser.FilterADs(&apiData)
+	apiData.BottomAds = bottomADs
+	apiData.TopAds = topADs
+
+	// ID
+	searchResult.ID = primitive.NewObjectID().String()
+
+	// Task
+	searchResult.Task = task
+
 	// Engine
-	searchResult.SearchUrl = apiResult.Input.OriginalURL
+	searchResult.SearchUrl = apiData.Input.OriginalURL
 
 	// HTML
-	if s.IncludeHTML {
-		searchResult.HTMLData = apiResult.HTML
+	if s.SearchConfig.IncludeHTML {
+		searchResult.HTMLData = apiData.HTML
 	}
 
 	// Search Results
+	searchResult.Results = parser.ParseSearchResults(task, apiData)
 
 	// Shopping ADs
 
-	return process_entity.SearchResult{
-		ID:              "",
-		Results:         []process_entity.SearchResultItem{},
-		ShoppingResults: []process_entity.ShoppingSearchResultItem{},
-		Task:            task,
-		SearchUrl:       apiResult.General.SearchType,
-		HTMLData:        apiResult.HTML,
-		CreatedAt:       time.Now(),
-	}
+	// Created At
+	searchResult.CreatedAt = time.Now()
+
+	return searchResult
 }

@@ -1,11 +1,18 @@
 package parser
 
-func NewBrightDataParser(includeHTML bool) BrightDataParser {
+func NewBrightDataParser(opts BrightDataParserOptions) BrightDataParser {
 	return BrightDataParser{
-		IncludeHTML: includeHTML,
+		SearchOptions: opts,
 	}
 }
 
 type BrightDataParser struct {
-	IncludeHTML bool
+	SearchOptions BrightDataParserOptions
+}
+
+type BrightDataParserOptions struct {
+	IncludeHTML                bool
+	SkipRedirectAll            bool
+	SkipRedirectCampaigns      string
+	SkipCustomerDomainRedirect bool
 }

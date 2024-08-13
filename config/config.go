@@ -32,20 +32,20 @@ func NewConfig() (Config, error) {
 
 	cfg := Config{
 		DebugMode: environment.DebugMode,
-		BrightDataConfig: brightDataConfig{
+		BrightDataConfig: BrightDataConfig{
 			Host:     environment.BrightDataHost,
 			Port:     environment.BrightDataPort,
 			Username: environment.BrightDataUsername,
 			Password: environment.BrightDataPassword,
 		},
-		RabbitMQConfig: rabbitMQConfig{
+		RabbitMQConfig: RabbitMQConfig{
 			URI: environment.RabbitMQURI,
 		},
-		MongoConfig: mongoConfig{
+		MongoConfig: MongoConfig{
 			URI:          environment.MongoURI,
 			DatabaseName: environment.MongoDatabase,
 		},
-		SearchConfig: searchConfig{
+		SearchConfig: SearchConfig{
 			IncludeHTML:                environment.SearchIncludeHTML,
 			SkipRedirectAll:            environment.SearchSkipRedirectAll,
 			SkipRedirectCampaigns:      environment.SearchSkipRedirectCampaigns,
@@ -58,29 +58,29 @@ func NewConfig() (Config, error) {
 
 type Config struct {
 	DebugMode        bool
-	BrightDataConfig brightDataConfig
-	RabbitMQConfig   rabbitMQConfig
-	MongoConfig      mongoConfig
-	SearchConfig     searchConfig
+	BrightDataConfig BrightDataConfig
+	RabbitMQConfig   RabbitMQConfig
+	MongoConfig      MongoConfig
+	SearchConfig     SearchConfig
 }
 
-type brightDataConfig struct {
+type BrightDataConfig struct {
 	Host     string
 	Port     int
 	Username string
 	Password string
 }
 
-type rabbitMQConfig struct {
+type RabbitMQConfig struct {
 	URI string
 }
 
-type mongoConfig struct {
+type MongoConfig struct {
 	URI          string
 	DatabaseName string
 }
 
-type searchConfig struct {
+type SearchConfig struct {
 	IncludeHTML                bool
 	SkipRedirectAll            bool
 	SkipRedirectCampaigns      string
