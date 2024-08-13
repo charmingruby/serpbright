@@ -36,5 +36,5 @@ func (h *CampaignTaskProcessHandler) Handle(msg []byte) {
 		log.Fatal(err.Error())
 	}
 
-	log.Printf("TASK PROCESSED: %s", output.SearchResult.ID)
+	log.Printf("TASK PROCESSED: %v", output.SearchResult.Task.BrandName)
 }

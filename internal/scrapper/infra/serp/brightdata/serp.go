@@ -13,13 +13,18 @@ func (s *BrightData) Search(campaignTask entity.CampaignTask) (process_entity.Se
 		slog.Info("BUILT REQUEST URL: " + reqURL)
 	}
 
-	serchResult, err := s.doRequest(reqURL)
+	searchResult, err := s.doRequest(reqURL)
 	if err != nil {
 		return process_entity.SearchResult{}, err
 	}
 	slog.Info("BRIGHT DATA: Processed JSON request")
 
-	rawData := BrighDataResultToSearchResult(serchResult, campaignTask)
+	topADs, bottomADs := s.filterADs(&searchResult)
+
+	searchResult.BottomAds = bottomADs
+	searchResult.TopAds = topADs
+
+	rawData := BrighDataResultToSearchResult(searchResult, campaignTask)
 
 	return rawData, nil
 }
