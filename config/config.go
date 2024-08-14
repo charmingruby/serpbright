@@ -18,6 +18,9 @@ type environment struct {
 	SearchSkipRedirectAll            bool   `env:"SEARCH_SKIP_REDIRECT_ALL,required"`
 	SearchSkipRedirectCampaigns      string `env:"SEARCH_SKIP_REDIRECT_CAMPAIGNS,required"`
 	SearchSkipCustomerDomainRedirect bool   `env:"SEARCH_SKIP_CUSTOMER_DOMAIN_REDIRECT,required"`
+	SearchRedirectTimeout            int    `env:"SEARCH_REDIRECT_TIMEOUT,required"`
+	SearchConcatFirstURLDomain       string `env:"SEARCH_CONCAT_FIRST_URL_DOMAIN,required"`
+	SearchConcatDomainLastURL        string `env:"SEARCH_CONCAT_DOMAIN_LAST_URL,required"`
 	DebugMode                        bool   `env:"DEBUG_MODE,required"`
 }
 
@@ -50,6 +53,9 @@ func NewConfig() (Config, error) {
 			SkipRedirectAll:            environment.SearchSkipRedirectAll,
 			SkipRedirectCampaigns:      environment.SearchSkipRedirectCampaigns,
 			SkipCustomerDomainRedirect: environment.SearchSkipCustomerDomainRedirect,
+			RedirectTimeout:            environment.SearchRedirectTimeout,
+			ConcatFirstDomainURL:       environment.SearchConcatFirstURLDomain,
+			ConcatDomainLastURL:        environment.SearchConcatDomainLastURL,
 		},
 	}
 
@@ -85,4 +91,7 @@ type SearchConfig struct {
 	SkipRedirectAll            bool
 	SkipRedirectCampaigns      string
 	SkipCustomerDomainRedirect bool
+	RedirectTimeout            int
+	ConcatDomainLastURL        string
+	ConcatFirstDomainURL       string
 }

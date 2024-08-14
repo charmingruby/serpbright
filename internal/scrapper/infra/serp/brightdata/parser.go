@@ -18,9 +18,12 @@ func (s *BrightData) parseResult(apiData data.BrightDataSearchResult, task entit
 		SkipRedirectAll:            s.SearchConfig.SkipRedirectAll,
 		SkipRedirectCampaigns:      s.SearchConfig.SkipRedirectCampaigns,
 		SkipCustomerDomainRedirect: s.SearchConfig.SkipCustomerDomainRedirect,
+		RedirectTimeout:            s.SearchConfig.RedirectTimeout,
+		ConcatFirstDomainURL:       s.SearchConfig.ConcatFirstDomainURL,
+		ConcatDomainLastURL:        s.SearchConfig.ConcatDomainLastURL,
 	})
 
-	topADs, bottomADs := parser.FilterADs(&apiData)
+	unifiedADs, topADs, bottomADs := parser.FilterADs(&apiData)
 	apiData.BottomAds = bottomADs
 	apiData.TopAds = topADs
 
@@ -39,7 +42,7 @@ func (s *BrightData) parseResult(apiData data.BrightDataSearchResult, task entit
 	}
 
 	// Search Results
-	searchResult.Results = parser.ParseSearchResults(task, apiData)
+	searchResult.Results = parser.ParseSearchResults(task, apiData, unifiedADs)
 
 	// Shopping ADs
 

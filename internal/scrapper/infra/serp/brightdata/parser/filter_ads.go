@@ -5,10 +5,10 @@ import (
 	"strings"
 
 	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/brightdata/data"
-	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/constant"
+	"github.com/charmingruby/serpright/internal/scrapper/infra/serp/util/constant"
 )
 
-func (p *BrightDataParser) FilterADs(bdr *data.BrightDataSearchResult) ([]data.Ad, []data.Ad) {
+func (p *BrightDataParser) FilterADs(bdr *data.BrightDataSearchResult) ([]ADFilter, []data.Ad, []data.Ad) {
 	var adsToFilter []ADFilter
 
 	if len(bdr.TopAds) != 0 {
@@ -73,7 +73,7 @@ func (p *BrightDataParser) FilterADs(bdr *data.BrightDataSearchResult) ([]data.A
 		filteredBottomADs = append(filteredBottomADs, ad.AD)
 	}
 
-	return filteredTopADs, filteredBottomADs
+	return adsToFilter, filteredTopADs, filteredBottomADs
 }
 
 type ADFilter struct {

@@ -1,4 +1,4 @@
-package brightdata
+package request
 
 import (
 	"crypto/tls"
@@ -35,8 +35,8 @@ type brightDataRequestParams struct {
 	Page         int
 }
 
-func (s *BrightData) doRequest(reqURL string) (data.BrightDataSearchResult, error) {
-	proxy, err := url.Parse(s.ProxyURL)
+func DoRequest(reqURL string, proxyURL string, isDebugMode bool) (data.BrightDataSearchResult, error) {
+	proxy, err := url.Parse(proxyURL)
 	if err != nil {
 		slog.Error("Proxy URL parse error: ")
 		return data.BrightDataSearchResult{}, err
@@ -75,7 +75,7 @@ func (s *BrightData) doRequest(reqURL string) (data.BrightDataSearchResult, erro
 		return data.BrightDataSearchResult{}, err
 	}
 
-	if s.DebugMode {
+	if isDebugMode {
 		path := fmt.Sprintf("./tmp/bright_data_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
 		err := os.WriteFile(path, body, 0644)
 		if err != nil {
@@ -92,9 +92,8 @@ func (s *BrightData) doRequest(reqURL string) (data.BrightDataSearchResult, erro
 	return serpResult, nil
 }
 
-func (s *BrightData) buildBrightDataRequestURL(campaignTask entity.CampaignTask) string {
+func BuildBrightDataRequestURL(campaignTask entity.CampaignTask) string {
 	base64GeoLocation := base64.StdEncoding.EncodeToString([]byte(campaignTask.GeoLocation))
-	itemsPerPage := 10
 
 	params := brightDataRequestParams{
 		UULE:         url.QueryEscape("w+CAIQICI" + constant.UULEKeys[len(campaignTask.GeoLocation)] + base64GeoLocation),
@@ -102,8 +101,8 @@ func (s *BrightData) buildBrightDataRequestURL(campaignTask entity.CampaignTask)
 		GL:           helper.EmptyString(campaignTask.LocaleCountry, "br"),
 		HL:           helper.EmptyString(campaignTask.Locale, "pt-br"),
 		Q:            url.QueryEscape(campaignTask.Keyword),
-		Device:       s.extractDeviceFromTask(campaignTask),
-		Page:         int(campaignTask.Page) * itemsPerPage,
+		Device:       ExtractDeviceFromTask(campaignTask),
+		Page:         int(campaignTask.Page) * ItemsPerPage,
 	}
 
 	builtParams := []string{
@@ -120,7 +119,7 @@ func (s *BrightData) buildBrightDataRequestURL(campaignTask entity.CampaignTask)
 
 	return url
 }
-func (s *BrightData) extractDeviceFromTask(task entity.CampaignTask) string {
+func ExtractDeviceFromTask(task entity.CampaignTask) string {
 	if task.Device == constant.MobileDevice {
 		if task.MobileType == constant.MobileTypeAndroid {
 			return AndroidDevice
