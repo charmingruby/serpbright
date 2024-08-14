@@ -45,7 +45,7 @@ func (h *CampaignTaskProcessHandler) Handle(msg []byte) {
 		slog.Error(err.Error())
 	}
 
-	path := fmt.Sprintf("./tmp/search_result_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
+	path := fmt.Sprintf("./tmp/results/search_result_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
 	if err := os.WriteFile(path, body, 0644); err != nil {
 		slog.Error(err.Error())
 	}

@@ -4,7 +4,6 @@
 # temporary files
 tmp
 
-# examples
-example
-*_response.json
-responses
+
+# docker
+.docker

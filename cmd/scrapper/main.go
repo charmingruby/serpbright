@@ -8,7 +8,7 @@ import (
 	"syscall"
 
 	"github.com/charmingruby/serpright/config"
-	rabbitMQPubSub "github.com/charmingruby/serpright/internal/common/queue/rabbitmq"
+	rabbitMQPubSub "github.com/charmingruby/serpright/internal/common/infra/queue/rabbitmq"
 	"github.com/charmingruby/serpright/internal/scrapper"
 	"github.com/charmingruby/serpright/internal/scrapper/domain/event"
 	"github.com/charmingruby/serpright/internal/scrapper/infra/database/mongo_repository"

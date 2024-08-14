@@ -76,7 +76,7 @@ func DoRequest(reqURL string, proxyURL string, isDebugMode bool) (data.BrightDat
 	}
 
 	if isDebugMode {
-		path := fmt.Sprintf("./tmp/bright_data_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
+		path := fmt.Sprintf("./tmp/results/bright_data_%s_response.json", time.Time.Format(time.Now(), "2006-01-02 15:04:05"))
 		err := os.WriteFile(path, body, 0644)
 		if err != nil {
 			return data.BrightDataSearchResult{}, err

@@ -16,6 +16,7 @@ import (
 	"strings"
 	"time"
 
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	netHTML "golang.org/x/net/html"
 
 	"github.com/charmingruby/serpright/internal/common/helper"
@@ -181,7 +182,10 @@ func (p *BrightDataParser) ParseSearchResults(
 
 		campaignID, device, deviceType, keyword, page, geoLocation := task.ExtractDataFromID()
 
+		mongoGeneratedID := primitive.NewObjectID().String()
+
 		adData := process_entity.SearchResultItem{
+			Id:             &mongoGeneratedID,
 			CampaignTaskId: task.ID,
 			CampaignId:     campaignID,
 			GeoLocation:    geoLocation,
@@ -189,7 +193,6 @@ func (p *BrightDataParser) ParseSearchResults(
 			DeviceType:     deviceType,
 			Keyword:        keyword,
 			Page:           page,
-
 			// Values
 			Position:           uint8(ad.AD.Rank),
 			PositionOnPage:     ad.blockPosition,

@@ -1,6 +1,8 @@
 package usecase
 
 import (
+	"errors"
+
 	"github.com/charmingruby/serpright/internal/scrapper/domain/dto"
 )
 
@@ -10,9 +12,9 @@ func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerp
 		return dto.ProcessSerpSearchOutputDTO{}, err
 	}
 
-	//	if err := s.SearchResultRepository.Store(processedResult); err != nil {
-	//		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Serp result insertion error: " + err.Error())
-	//}
+	if err := s.SearchResultRepository.Store(searchResult); err != nil {
+		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Search result insertion error: " + err.Error())
+	}
 
 	return dto.ProcessSerpSearchOutputDTO{
 		SearchResult: searchResult,
