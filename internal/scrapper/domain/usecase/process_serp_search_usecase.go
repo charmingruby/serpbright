@@ -13,6 +13,10 @@ func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerp
 	}
 
 	if err := s.SearchResultRepository.Store(searchResult); err != nil {
+		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Search result bundle insertion error: " + err.Error())
+	}
+
+	if err := s.SearchResultRepository.StoreManyResultItems(searchResult.Results); err != nil {
 		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Search result insertion error: " + err.Error())
 	}
 

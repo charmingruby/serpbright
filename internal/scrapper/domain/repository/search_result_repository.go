@@ -4,4 +4,5 @@ import "github.com/charmingruby/serpright/internal/scrapper/domain/entity/proces
 
 type SearchResultRepository interface {
 	Store(sr process_entity.SearchResult) error
+	StoreManyResultItems(srs []process_entity.SearchResultItem) error
 }
