@@ -1,9 +1,12 @@
 package entity
 
-import "time"
+import (
+	"strings"
+	"time"
+)
 
 type CampaignTask struct {
-	ID                  string      `json:"id" bson:"_id"` // CampaignId;Device;MobileType;Page;Keyword;GeoLocation;CreatedAtUTC
+	ID                  string      `json:"_id" bson:"_id"` // CampaignId;Device;MobileType;Page;Keyword;GeoLocation;CreatedAtUTC
 	CreatedAt           TimeWrapper `json:"createdAt" bson:"createdAt"`
 	SearchType          string      `json:"searchType" bson:"searchType"`
 	BrokerId            string      `json:"brokerId" bson:"brokerId"`
@@ -31,4 +34,24 @@ type CampaignTask struct {
 
 type TimeWrapper struct {
 	Date time.Time `json:"$date"`
+}
+
+func (c *CampaignTask) ExtractDataFromID() (
+	campaignID string,
+	device string,
+	deviceType string,
+	keyword string,
+	page string,
+	geoLocation string,
+) {
+	parts := strings.Split(c.ID, ";")
+
+	campaignID = parts[0]
+	device = parts[1]
+	deviceType = parts[2]
+	keyword = parts[3]
+	page = parts[4]
+	geoLocation = parts[5]
+
+	return campaignID, device, deviceType, keyword, page, geoLocation
 }

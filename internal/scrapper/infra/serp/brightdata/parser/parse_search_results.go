@@ -177,7 +177,20 @@ func (p *BrightDataParser) ParseSearchResults(
 			subDomain = apiSubDomainString
 		}
 
+		displayedURL := fmt.Sprintf("https://%s%s", subDomain, adDomain)
+
+		campaignID, device, deviceType, keyword, page, geoLocation := task.ExtractDataFromID()
+
 		adData := process_entity.SearchResultItem{
+			CampaignTaskId: task.ID,
+			CampaignId:     campaignID,
+			GeoLocation:    geoLocation,
+			Device:         device,
+			DeviceType:     deviceType,
+			Keyword:        keyword,
+			Page:           page,
+
+			// Values
 			Position:           uint8(ad.AD.Rank),
 			PositionOnPage:     ad.blockPosition,
 			Title:              ad.AD.Title,
@@ -193,12 +206,13 @@ func (p *BrightDataParser) ParseSearchResults(
 			IsOwner:            isOwner,
 			SubDomain:          subDomain,
 			LinkUrl:            ad.AD.Link,
-			DisplayedUrl:       ad.AD.DisplayLink,
+			DisplayedUrl:       displayedURL,
 			Description:        ad.AD.Description,
 			Type:               "ad",
 			RedirectSeconds:    finishedRedirectTime.Seconds(),
 			RedirectHTTPCode:   httpCode,
 			Channel:            "search",
+			Evidence:           task.HtmlDataUrl,
 			CreatedAt:          time.Now()}
 
 		var incompleteFirstUrlDomain = strings.Split(p.SearchOptions.ConcatFirstDomainURL, ",")
