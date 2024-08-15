@@ -45,6 +45,10 @@ func (s *BrightData) parseResult(apiData data.BrightDataSearchResult, task entit
 	searchResult.Results = parser.ParseSearchResults(task, apiData, unifiedADs)
 
 	// Shopping ADs
+	searchResult.ShoppingResults = parser.ParseShoppingSearchResults(task, apiData)
+	if len(searchResult.ShoppingResults) > 0 {
+		searchResult.Results = append(searchResult.Results, parser.AddShoppingResultItems(searchResult.ShoppingResults)...)
+	}
 
 	// Created At
 	searchResult.CreatedAt = time.Now()
