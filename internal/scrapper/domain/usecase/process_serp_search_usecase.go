@@ -20,6 +20,10 @@ func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerp
 		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Search result insertion error: " + err.Error())
 	}
 
+	if err := s.SearchResultRepository.StoreManyShoppingResultItems(searchResult.ShoppingResults); err != nil {
+		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Shopping search result insertion error: " + err.Error())
+	}
+
 	return dto.ProcessSerpSearchOutputDTO{
 		SearchResult: searchResult,
 	}, nil
