@@ -9,14 +9,16 @@ import (
 	amqp "github.com/rabbitmq/amqp091-go"
 )
 
-func NewRabbitMQPubSub(ch *amqp.Channel) RabbitMQPubSub {
+func NewRabbitMQPubSub(ch *amqp.Channel, concurrency int) RabbitMQPubSub {
 	return RabbitMQPubSub{
-		ch: ch,
+		ch:          ch,
+		concurrency: concurrency,
 	}
 }
 
 type RabbitMQPubSub struct {
-	ch *amqp.Channel
+	ch          *amqp.Channel
+	concurrency int
 }
 
 func (rmq *RabbitMQPubSub) Publish(topic string, message []byte) error {
@@ -53,10 +55,24 @@ func (rmq *RabbitMQPubSub) Subscribe(topic string, handler func([]byte)) {
 
 	slog.Info("RABBITMQ: Pooling on " + topic)
 
+	workers := make(chan struct{}, rmq.concurrency)
+
+	for i := 0; i < rmq.concurrency; i++ {
+		workers <- struct{}{}
+	}
+
 	go func() {
 		for d := range msgs {
-			log.Printf("Received message from %s -> %v", topic, string(d.MessageId))
-			handler(d.Body)
+			<-workers
+
+			go func(d amqp.Delivery) {
+				defer func() {
+					workers <- struct{}{}
+				}()
+
+				log.Printf("Received message from %s -> %v", topic, string(d.MessageId))
+				handler(d.Body)
+			}(d)
 		}
 	}()
 

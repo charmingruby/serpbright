@@ -22,6 +22,7 @@ type environment struct {
 	SearchConcatFirstURLDomain       string `env:"SEARCH_CONCAT_FIRST_URL_DOMAIN,required"`
 	SearchConcatDomainLastURL        string `env:"SEARCH_CONCAT_DOMAIN_LAST_URL,required"`
 	DebugMode                        bool   `env:"DEBUG_MODE,required"`
+	ConcurrencyThreads               int    `env:"CONCURRENCY_THREADS,required"`
 }
 
 func NewConfig() (Config, error) {
@@ -34,7 +35,8 @@ func NewConfig() (Config, error) {
 	slog.Info("ENVIRONMENT: Environment variables loaded successfully!")
 
 	cfg := Config{
-		DebugMode: environment.DebugMode,
+		DebugMode:          environment.DebugMode,
+		ConcurrencyThreads: environment.ConcurrencyThreads,
 		BrightDataConfig: BrightDataConfig{
 			Host:     environment.BrightDataHost,
 			Port:     environment.BrightDataPort,
@@ -63,11 +65,12 @@ func NewConfig() (Config, error) {
 }
 
 type Config struct {
-	DebugMode        bool
-	BrightDataConfig BrightDataConfig
-	RabbitMQConfig   RabbitMQConfig
-	MongoConfig      MongoConfig
-	SearchConfig     SearchConfig
+	DebugMode          bool
+	ConcurrencyThreads int
+	BrightDataConfig   BrightDataConfig
+	RabbitMQConfig     RabbitMQConfig
+	MongoConfig        MongoConfig
+	SearchConfig       SearchConfig
 }
 
 type BrightDataConfig struct {

@@ -46,7 +46,7 @@ func main() {
 		os.Exit(1)
 	}
 
-	pubsub := rabbitMQPubSub.NewRabbitMQPubSub(ch)
+	pubsub := rabbitMQPubSub.NewRabbitMQPubSub(ch, cfg.ConcurrencyThreads)
 	searchResultRepo := mongo_repository.NewSearchResultMongoRepository(db)
 
 	serp := brightdata.NewBrightData(cfg)

@@ -16,12 +16,16 @@ func (s *ScrapperUseCaseRegistry) ProcessSerpSearchUseCase(input dto.ProcessSerp
 		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Search result bundle insertion error: " + err.Error())
 	}
 
-	if err := s.SearchResultRepository.StoreManyResultItems(searchResult.Results); err != nil {
-		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Search result insertion error: " + err.Error())
+	if len(searchResult.Results) > 0 {
+		if err := s.SearchResultRepository.StoreManyResultItems(searchResult.Results); err != nil {
+			return dto.ProcessSerpSearchOutputDTO{}, errors.New("Search result insertion error: " + err.Error())
+		}
 	}
 
-	if err := s.SearchResultRepository.StoreManyShoppingResultItems(searchResult.ShoppingResults); err != nil {
-		return dto.ProcessSerpSearchOutputDTO{}, errors.New("Shopping search result insertion error: " + err.Error())
+	if len(searchResult.ShoppingResults) > 0 {
+		if err := s.SearchResultRepository.StoreManyShoppingResultItems(searchResult.ShoppingResults); err != nil {
+			return dto.ProcessSerpSearchOutputDTO{}, errors.New("Shopping search result insertion error: " + err.Error())
+		}
 	}
 
 	return dto.ProcessSerpSearchOutputDTO{
